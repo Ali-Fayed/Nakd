@@ -14,9 +14,9 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
     }
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if item.tag == 0 { // home tab
+        if item.tag == 0 {
             router?.trigger(.home)
-        } else if item.tag == 1 { // explore tab
+        } else if item.tag == 1 {
             router?.trigger(.more)
         }
     }

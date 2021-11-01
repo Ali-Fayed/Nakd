@@ -10,5 +10,4 @@ import XCoordinator
 
 class MoreViewModel {
     var router: StrongRouter<MoreRoute>?
-
 }
