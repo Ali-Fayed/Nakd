@@ -22,34 +22,60 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaX-eo-c89">
-                                <rect key="frame" x="186" y="245" width="35" height="15"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vVL-bu-pTA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="9uj-xE-oz0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngf-sN-01Q">
+                                            <rect key="frame" x="182" y="85" width="51" height="31"/>
+                                            <color key="backgroundColor" systemColor="labelColor"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title=""/>
+                                            <connections>
+                                                <action selector="playVideoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ko-Go-LFq"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ngf-sN-01Q" firstAttribute="leading" secondItem="9uj-xE-oz0" secondAttribute="leading" constant="182" id="Nun-um-Ctw"/>
+                                        <constraint firstAttribute="bottom" secondItem="ngf-sN-01Q" secondAttribute="bottom" constant="84" id="ig7-zG-2Uc"/>
+                                        <constraint firstAttribute="trailing" secondItem="ngf-sN-01Q" secondAttribute="trailing" constant="181" id="rW4-NM-D2B"/>
+                                        <constraint firstItem="ngf-sN-01Q" firstAttribute="top" secondItem="9uj-xE-oz0" secondAttribute="top" constant="85" id="uUk-hG-OHs"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tff-Sd-3eG">
+                                <rect key="frame" x="189" y="440" width="35" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM6-3s-d8t">
-                                <rect key="frame" x="186" y="306" width="35" height="15"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nu-KB-rHE">
+                                <rect key="frame" x="189" y="440" width="35" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85M-RA-S2R">
-                                <rect key="frame" x="186" y="387" width="42" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEA-St-Mjv">
+                                <rect key="frame" x="186" y="437" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLE-eQ-fOg">
-                                <rect key="frame" x="186" y="274" width="34" height="15"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGr-Uc-mHb">
+                                <rect key="frame" x="190" y="440" width="34" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -58,12 +84,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVL-bu-pTA" secondAttribute="trailing" id="6VX-Mp-oU1"/>
+                            <constraint firstItem="vVL-bu-pTA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PcD-j2-Zw6"/>
+                            <constraint firstItem="vVL-bu-pTA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VIJ-pa-cfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vVL-bu-pTA" secondAttribute="bottom" id="xBq-nM-9yp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="bKA-rK-uxC"/>
+                    <connections>
+                        <outlet property="playVideoButton" destination="ngf-sN-01Q" id="01f-yK-IBd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781" y="70"/>
+            <point key="canvasLocation" x="1121.7391304347827" y="69.642857142857139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="j0T-ux-p44">
@@ -87,7 +122,7 @@
         <!--More-->
         <scene sceneID="19m-CY-5sF">
             <objects>
-                <viewController id="rOk-Ed-SIo" customClass="ViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreViewController" id="rOk-Ed-SIo" customClass="MoreViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VnX-qd-8Cy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +150,7 @@
         <!--Home-->
         <scene sceneID="jMJ-Ht-Km7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5E-JF-hkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RaC-RY-hWM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="W5R-zK-PRa"/>
                     <toolbarItems/>
@@ -124,16 +160,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qzR-DZ-7Dq"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZQO-wk-KL4"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n5E-JF-hkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="424.63768115942031" y="69.642857142857139"/>
         </scene>
         <!--More-->
         <scene sceneID="5yM-aF-vIH">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LtK-hZ-3gs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gm1-k6-j1O" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="More" image="line.3.horizontal.decrease" catalog="system" id="3vF-ld-Uqr"/>
                     <toolbarItems/>
@@ -146,7 +182,6 @@
                         <segue destination="rOk-Ed-SIo" kind="relationship" relationship="rootViewController" id="Lqs-LF-htl"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LtK-hZ-3gs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1800.0000000000002" y="69.642857142857139"/>
         </scene>
@@ -154,6 +189,13 @@
     <resources>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

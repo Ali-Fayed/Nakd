@@ -7,10 +7,23 @@
 
 import UIKit
 import CoreData
+import XCoordinator
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    let router = AppCoordinator().strongRouter
+    let window: UIWindow! = UIWindow()
+    //MARK: - Keyboard Configuration
+    func keyboardConfiguration () {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+    }
+    //MARK: - App route
+    func appRouting () {
+        window?.overrideUserInterfaceStyle = .dark
+        router.setRoot(for: window)
+    }
     override init() {
         super.init()
         UIFont.overrideInitialize()
@@ -18,6 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        keyboardConfiguration ()
+        appRouting ()
+        
         return true
     }
 

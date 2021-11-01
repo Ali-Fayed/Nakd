@@ -1,1 +1,27 @@
 
+/* Class = "UILabel"; text = "Label"; ObjectID = "2Nu-KB-rHE"; */
+"2Nu-KB-rHE.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "More"; ObjectID = "3vF-ld-Uqr"; */
+"3vF-ld-Uqr.title" = "More";
+
+/* Class = "UINavigationItem"; title = "More"; ObjectID = "838-9b-4LV"; */
+"838-9b-4LV.title" = "More";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QEA-St-Mjv"; */
+"QEA-St-Mjv.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Tff-Sd-3eG"; */
+"Tff-Sd-3eG.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "W5R-zK-PRa"; */
+"W5R-zK-PRa.title" = "Home";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "bKA-rK-uxC"; */
+"bKA-rK-uxC.title" = "Home";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lGr-Uc-mHb"; */
+"lGr-Uc-mHb.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ngf-sN-01Q"; */
+"ngf-sN-01Q.normalTitle" = "Button";

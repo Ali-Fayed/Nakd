@@ -12,7 +12,7 @@
 		CC76C86A98F0D3E767F31CC5 /* Pods_Nakd_NakdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69971B200D394E282652FC2F /* Pods_Nakd_NakdUITests.framework */; };
 		EA7DE4A7273010C500FB0C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4A6273010C500FB0C8B /* AppDelegate.swift */; };
 		EA7DE4A9273010C500FB0C8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4A8273010C500FB0C8B /* SceneDelegate.swift */; };
-		EA7DE4AB273010C500FB0C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4AA273010C500FB0C8B /* ViewController.swift */; };
+		EA7DE4AB273010C500FB0C8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4AA273010C500FB0C8B /* HomeViewController.swift */; };
 		EA7DE4AE273010C500FB0C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7DE4AC273010C500FB0C8B /* Main.storyboard */; };
 		EA7DE4B1273010C500FB0C8B /* Nakd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4AF273010C500FB0C8B /* Nakd.xcdatamodeld */; };
 		EA7DE4B3273010C600FB0C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7DE4B2273010C600FB0C8B /* Assets.xcassets */; };
@@ -32,6 +32,15 @@
 		EAC3A00F27302C850038CB85 /* Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAC3A00827302C850038CB85 /* Tajawal-ExtraBold.ttf */; };
 		EAC3A01027302C850038CB85 /* Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAC3A00927302C850038CB85 /* Tajawal-Black.ttf */; };
 		EAC3A01327302D020038CB85 /* TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A01227302D020038CB85 /* TableViewExt.swift */; };
+		EAC3A0162730387A0038CB85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A0152730387A0038CB85 /* Constants.swift */; };
+		EAC3A01827303BCB0038CB85 /* TabBarCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A01727303BCB0038CB85 /* TabBarCordinator.swift */; };
+		EAC3A01A27303C010038CB85 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A01927303C010038CB85 /* HomeRouter.swift */; };
+		EAC3A01C27303C090038CB85 /* MoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A01B27303C090038CB85 /* MoreRouter.swift */; };
+		EAC3A01F27303C6F0038CB85 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A01E27303C6F0038CB85 /* MoreViewController.swift */; };
+		EAC3A02127303D160038CB85 /* MoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A02027303D160038CB85 /* MoreViewModel.swift */; };
+		EAC3A02327303D1F0038CB85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A02227303D1F0038CB85 /* HomeViewModel.swift */; };
+		EAC3A02527303DFC0038CB85 /* AppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A02427303DFC0038CB85 /* AppCordinator.swift */; };
+		EAC3A02727303E500038CB85 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3A02627303E500038CB85 /* TabBarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +73,7 @@
 		EA7DE4A3273010C500FB0C8B /* Nakd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nakd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7DE4A6273010C500FB0C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7DE4A8273010C500FB0C8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA7DE4AA273010C500FB0C8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA7DE4AA273010C500FB0C8B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA7DE4AD273010C500FB0C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA7DE4B0273010C500FB0C8B /* Nakd.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nakd.xcdatamodel; sourceTree = "<group>"; };
 		EA7DE4B2273010C600FB0C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +96,17 @@
 		EAC3A00827302C850038CB85 /* Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; };
 		EAC3A00927302C850038CB85 /* Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Black.ttf"; sourceTree = "<group>"; };
 		EAC3A01227302D020038CB85 /* TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExt.swift; sourceTree = "<group>"; };
+		EAC3A0152730387A0038CB85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EAC3A01727303BCB0038CB85 /* TabBarCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCordinator.swift; sourceTree = "<group>"; };
+		EAC3A01927303C010038CB85 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		EAC3A01B27303C090038CB85 /* MoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreRouter.swift; sourceTree = "<group>"; };
+		EAC3A01E27303C6F0038CB85 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		EAC3A02027303D160038CB85 /* MoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewModel.swift; sourceTree = "<group>"; };
+		EAC3A02227303D1F0038CB85 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EAC3A02427303DFC0038CB85 /* AppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinator.swift; sourceTree = "<group>"; };
+		EAC3A02627303E500038CB85 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		EAC3A028273041890038CB85 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		EAC3A0292730418A0038CB85 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +242,9 @@
 		EA7DE4DC2730110500FB0C8B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EA7DE4AA273010C500FB0C8B /* ViewController.swift */,
+				EAC3A0142730386E0038CB85 /* Home Module */,
+				EAC3A01D27303C5F0038CB85 /* More Module */,
+				EAC3A02A273041B40038CB85 /* TabBar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -242,6 +264,10 @@
 			isa = PBXGroup;
 			children = (
 				EA7DE4E92730133300FB0C8B /* Storyboarded.swift */,
+				EAC3A01727303BCB0038CB85 /* TabBarCordinator.swift */,
+				EAC3A01927303C010038CB85 /* HomeRouter.swift */,
+				EAC3A01B27303C090038CB85 /* MoreRouter.swift */,
+				EAC3A02427303DFC0038CB85 /* AppCordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -276,6 +302,33 @@
 				EAC3A01227302D020038CB85 /* TableViewExt.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EAC3A0142730386E0038CB85 /* Home Module */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4AA273010C500FB0C8B /* HomeViewController.swift */,
+				EAC3A0152730387A0038CB85 /* Constants.swift */,
+				EAC3A02227303D1F0038CB85 /* HomeViewModel.swift */,
+			);
+			path = "Home Module";
+			sourceTree = "<group>";
+		};
+		EAC3A01D27303C5F0038CB85 /* More Module */ = {
+			isa = PBXGroup;
+			children = (
+				EAC3A01E27303C6F0038CB85 /* MoreViewController.swift */,
+				EAC3A02027303D160038CB85 /* MoreViewModel.swift */,
+			);
+			path = "More Module";
+			sourceTree = "<group>";
+		};
+		EAC3A02A273041B40038CB85 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EAC3A02627303E500038CB85 /* TabBarVC.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,14 +579,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7DE4AB273010C500FB0C8B /* ViewController.swift in Sources */,
+				EA7DE4AB273010C500FB0C8B /* HomeViewController.swift in Sources */,
+				EAC3A01F27303C6F0038CB85 /* MoreViewController.swift in Sources */,
 				EAC3A01327302D020038CB85 /* TableViewExt.swift in Sources */,
 				EA7DE4A7273010C500FB0C8B /* AppDelegate.swift in Sources */,
+				EAC3A02527303DFC0038CB85 /* AppCordinator.swift in Sources */,
 				EA7DE4E5273011E600FB0C8B /* Localizable.swift in Sources */,
 				EA7DE4A9273010C500FB0C8B /* SceneDelegate.swift in Sources */,
+				EAC3A02127303D160038CB85 /* MoreViewModel.swift in Sources */,
 				EA7DE4E82730131F00FB0C8B /* Fonts.swift in Sources */,
+				EAC3A01827303BCB0038CB85 /* TabBarCordinator.swift in Sources */,
+				EAC3A01C27303C090038CB85 /* MoreRouter.swift in Sources */,
 				EA7DE4B1273010C500FB0C8B /* Nakd.xcdatamodeld in Sources */,
 				EA7DE4EA2730133300FB0C8B /* Storyboarded.swift in Sources */,
+				EAC3A0162730387A0038CB85 /* Constants.swift in Sources */,
+				EAC3A02727303E500038CB85 /* TabBarVC.swift in Sources */,
+				EAC3A02327303D1F0038CB85 /* HomeViewModel.swift in Sources */,
+				EAC3A01A27303C010038CB85 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +636,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EA7DE4AD273010C500FB0C8B /* Base */,
+				EAC3A028273041890038CB85 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -582,6 +645,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EA7DE4B5273010C600FB0C8B /* Base */,
+				EAC3A0292730418A0038CB85 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
