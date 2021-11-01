@@ -17,6 +17,10 @@
 		EA7DE4C1273010C700FB0C8B /* NakdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4C0273010C700FB0C8B /* NakdTests.swift */; };
 		EA7DE4CB273010C700FB0C8B /* NakdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4CA273010C700FB0C8B /* NakdUITests.swift */; };
 		EA7DE4CD273010C700FB0C8B /* NakdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4CC273010C700FB0C8B /* NakdUITestsLaunchTests.swift */; };
+		EA7DE4E32730117900FB0C8B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA7DE4E22730117900FB0C8B /* Localizable.strings */; };
+		EA7DE4E5273011E600FB0C8B /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4E4273011E600FB0C8B /* Localizable.swift */; };
+		EA7DE4E82730131F00FB0C8B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4E72730131F00FB0C8B /* Fonts.swift */; };
+		EA7DE4EA2730133300FB0C8B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4E92730133300FB0C8B /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		EA7DE4C6273010C700FB0C8B /* NakdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NakdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7DE4CA273010C700FB0C8B /* NakdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NakdUITests.swift; sourceTree = "<group>"; };
 		EA7DE4CC273010C700FB0C8B /* NakdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NakdUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA7DE4E22730117900FB0C8B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EA7DE4E4273011E600FB0C8B /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		EA7DE4E72730131F00FB0C8B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EA7DE4E92730133300FB0C8B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,12 @@
 		EA7DE4A5273010C500FB0C8B /* Nakd */ = {
 			isa = PBXGroup;
 			children = (
-				EA7DE4A6273010C500FB0C8B /* AppDelegate.swift */,
-				EA7DE4A8273010C500FB0C8B /* SceneDelegate.swift */,
-				EA7DE4AA273010C500FB0C8B /* ViewController.swift */,
-				EA7DE4AC273010C500FB0C8B /* Main.storyboard */,
-				EA7DE4B2273010C600FB0C8B /* Assets.xcassets */,
-				EA7DE4B4273010C600FB0C8B /* LaunchScreen.storyboard */,
+				EA7DE4DF2730114400FB0C8B /* Helper */,
+				EA7DE4D9273010D600FB0C8B /* App Delegate */,
+				EA7DE4DC2730110500FB0C8B /* Modules */,
+				EA7DE4DA273010EA00FB0C8B /* Storyboard */,
+				EA7DE4DB273010FE00FB0C8B /* Assets */,
 				EA7DE4B7273010C600FB0C8B /* Info.plist */,
-				EA7DE4AF273010C500FB0C8B /* Nakd.xcdatamodeld */,
 			);
 			path = Nakd;
 			sourceTree = "<group>";
@@ -128,6 +134,76 @@
 				EA7DE4CC273010C700FB0C8B /* NakdUITestsLaunchTests.swift */,
 			);
 			path = NakdUITests;
+			sourceTree = "<group>";
+		};
+		EA7DE4D9273010D600FB0C8B /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4A6273010C500FB0C8B /* AppDelegate.swift */,
+				EA7DE4A8273010C500FB0C8B /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		EA7DE4DA273010EA00FB0C8B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4AC273010C500FB0C8B /* Main.storyboard */,
+				EA7DE4B4273010C600FB0C8B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EA7DE4DB273010FE00FB0C8B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4B2273010C600FB0C8B /* Assets.xcassets */,
+				EA7DE4AF273010C500FB0C8B /* Nakd.xcdatamodeld */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EA7DE4DC2730110500FB0C8B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4AA273010C500FB0C8B /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EA7DE4DF2730114400FB0C8B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4E62730130000FB0C8B /* Fonts */,
+				EA7DE4E12730116600FB0C8B /* Localization */,
+				EA7DE4E02730115D00FB0C8B /* Navigation */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EA7DE4E02730115D00FB0C8B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4E92730133300FB0C8B /* Storyboarded.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EA7DE4E12730116600FB0C8B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4E22730117900FB0C8B /* Localizable.strings */,
+				EA7DE4E4273011E600FB0C8B /* Localizable.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EA7DE4E62730130000FB0C8B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DE4E72730131F00FB0C8B /* Fonts.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +292,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = EA7DE49A273010C500FB0C8B;
 			productRefGroup = EA7DE4A4273010C500FB0C8B /* Products */;
@@ -235,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7DE4B6273010C600FB0C8B /* LaunchScreen.storyboard in Resources */,
+				EA7DE4E32730117900FB0C8B /* Localizable.strings in Resources */,
 				EA7DE4B3273010C600FB0C8B /* Assets.xcassets in Resources */,
 				EA7DE4AE273010C500FB0C8B /* Main.storyboard in Resources */,
 			);
@@ -263,8 +341,11 @@
 			files = (
 				EA7DE4AB273010C500FB0C8B /* ViewController.swift in Sources */,
 				EA7DE4A7273010C500FB0C8B /* AppDelegate.swift in Sources */,
+				EA7DE4E5273011E600FB0C8B /* Localizable.swift in Sources */,
 				EA7DE4A9273010C500FB0C8B /* SceneDelegate.swift in Sources */,
+				EA7DE4E82730131F00FB0C8B /* Fonts.swift in Sources */,
 				EA7DE4B1273010C500FB0C8B /* Nakd.xcdatamodeld in Sources */,
+				EA7DE4EA2730133300FB0C8B /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -385,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
