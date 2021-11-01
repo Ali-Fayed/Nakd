@@ -19,14 +19,20 @@ class HomeTabBarCoordinator: TabBarCoordinator<TabBarRoute> {
         let homeCoordinator = HomeCoordinator()
         homeCoordinator.rootViewController.navigationBar.prefersLargeTitles = true
         homeCoordinator.rootViewController.navigationItem.largeTitleDisplayMode = .always
+        homeCoordinator.rootViewController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 35)]
+        homeCoordinator.rootViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 15)]
         homeCoordinator.rootViewController.tabBarItem =
         UITabBarItem(title: "Home".localized(), image: UIImage(systemName: "homekit"), selectedImage: UIImage(systemName: "homekit"))
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 15)], for: .normal)
         //
         let moreCoordinator = MoreCoordinator()
         moreCoordinator.rootViewController.navigationBar.prefersLargeTitles = true
+        moreCoordinator.rootViewController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 35)]
+        moreCoordinator.rootViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 15)]
         moreCoordinator.rootViewController.navigationItem.largeTitleDisplayMode = .always
         moreCoordinator.rootViewController.tabBarItem =
         UITabBarItem(title: "More".localized(), image: UIImage(systemName: "line.3.horizontal.decrease"), selectedImage: UIImage(systemName: "line.3.horizontal.decrease"))
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 15)], for: .normal)
         //
         self.init(homeRouter: homeCoordinator.strongRouter,
                   moreRouter: moreCoordinator.strongRouter)
