@@ -67,6 +67,10 @@
 		EAF477762731798B00D31ABE /* Unit2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF477752731798B00D31ABE /* Unit2.storyboard */; };
 		EAF477792731856B00D31ABE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477782731856B00D31ABE /* IntroViewController.swift */; };
 		EAF4777B2731857200D31ABE /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF4777A2731857200D31ABE /* Intro.storyboard */; };
+		EAF4777E2731934900D31ABE /* FirstUnitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4777C2731934900D31ABE /* FirstUnitCollectionViewCell.swift */; };
+		EAF4777F2731934900D31ABE /* FirstUnitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF4777D2731934900D31ABE /* FirstUnitCollectionViewCell.xib */; };
+		EAF477822731947500D31ABE /* SecondUnitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477802731947500D31ABE /* SecondUnitCollectionViewCell.swift */; };
+		EAF477832731947500D31ABE /* SecondUnitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF477812731947500D31ABE /* SecondUnitCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +163,10 @@
 		EAF477752731798B00D31ABE /* Unit2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unit2.storyboard; sourceTree = "<group>"; };
 		EAF477782731856B00D31ABE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		EAF4777A2731857200D31ABE /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		EAF4777C2731934900D31ABE /* FirstUnitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAF4777D2731934900D31ABE /* FirstUnitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstUnitCollectionViewCell.xib; sourceTree = "<group>"; };
+		EAF477802731947500D31ABE /* SecondUnitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAF477812731947500D31ABE /* SecondUnitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondUnitCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +543,7 @@
 				EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */,
 				EAF477712731796400D31ABE /* SecondUnitConstants.swift */,
 				EAF477752731798B00D31ABE /* Unit2.storyboard */,
+				EAF47785273194F200D31ABE /* CollectionCell */,
 			);
 			path = Unit2;
 			sourceTree = "<group>";
@@ -548,6 +557,7 @@
 				EAF4776127315D5100D31ABE /* FirstModelConstants.swift */,
 				EAF4776327315D5E00D31ABE /* FirstUnitFormViewController.swift */,
 				EAF4776527315DCD00D31ABE /* Unit1.storyboard */,
+				EAF47784273194E500D31ABE /* CollectionCell */,
 			);
 			path = Unit1;
 			sourceTree = "<group>";
@@ -559,6 +569,24 @@
 				EAF4777A2731857200D31ABE /* Intro.storyboard */,
 			);
 			path = Intro;
+			sourceTree = "<group>";
+		};
+		EAF47784273194E500D31ABE /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4777C2731934900D31ABE /* FirstUnitCollectionViewCell.swift */,
+				EAF4777D2731934900D31ABE /* FirstUnitCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		EAF47785273194F200D31ABE /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAF477802731947500D31ABE /* SecondUnitCollectionViewCell.swift */,
+				EAF477812731947500D31ABE /* SecondUnitCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -673,12 +701,14 @@
 			files = (
 				EA7DE4B6273010C600FB0C8B /* LaunchScreen.storyboard in Resources */,
 				EAD06A1527309A1900AFBE93 /* OthersTableViewCollectionCell.xib in Resources */,
+				EAF477832731947500D31ABE /* SecondUnitCollectionViewCell.xib in Resources */,
 				EAF477582731435700D31ABE /* robot.json in Resources */,
 				EAC3A00A27302C850038CB85 /* Tajawal-Regular.ttf in Resources */,
 				EA7DE4E32730117900FB0C8B /* Localizable.strings in Resources */,
 				EAC3A01027302C850038CB85 /* Tajawal-Black.ttf in Resources */,
 				EAC3A00F27302C850038CB85 /* Tajawal-ExtraBold.ttf in Resources */,
 				EA7DE4B3273010C600FB0C8B /* Assets.xcassets in Resources */,
+				EAF4777F2731934900D31ABE /* FirstUnitCollectionViewCell.xib in Resources */,
 				EAD5540F273096F400F5F26B /* CategoriesCollectionViewCell.xib in Resources */,
 				EAD06A112730998500AFBE93 /* OthersCollectionViewCell.xib in Resources */,
 				EAD554022730952A00F5F26B /* CategoriesTableViewCollectionCell.xib in Resources */,
@@ -846,11 +876,13 @@
 				EAF4775E27315D3B00D31ABE /* FirstUnitModel.swift in Sources */,
 				EAF4776C2731790900D31ABE /* SecondUnitViewModel.swift in Sources */,
 				EAC3A0162730387A0038CB85 /* Constants.swift in Sources */,
+				EAF477822731947500D31ABE /* SecondUnitCollectionViewCell.swift in Sources */,
 				EAF4776E2731791600D31ABE /* SecondUnitModel.swift in Sources */,
 				EAD5540E273096F400F5F26B /* CategoriesCollectionViewCell.swift in Sources */,
 				EAF477702731792300D31ABE /* SecondUnitFormViewController.swift in Sources */,
 				EAC3A02727303E500038CB85 /* TabBarVC.swift in Sources */,
 				EAC3A02327303D1F0038CB85 /* HomeViewModel.swift in Sources */,
+				EAF4777E2731934900D31ABE /* FirstUnitCollectionViewCell.swift in Sources */,
 				EAC3A01A27303C010038CB85 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
