@@ -8,7 +8,6 @@
 import UIKit
 import AVKit
 import AVFoundation
-
 class HomeViewController: UIViewController, AVPlayerViewControllerDelegate {
     //MARK: - Props
     @IBOutlet weak var pageControl: UIPageControl!
@@ -19,6 +18,7 @@ class HomeViewController: UIViewController, AVPlayerViewControllerDelegate {
                     UIImage(named:"101") ,
                     UIImage(named:"102") ,
     ]
+    weak var delegate: HomeViewCellDelegate?
     lazy var viewModel = HomeViewModel()
     var playerController = AVPlayerViewController()
     var timer = Timer()
@@ -33,6 +33,7 @@ class HomeViewController: UIViewController, AVPlayerViewControllerDelegate {
     //MARK: - UI methods
     func UIconfig () {
         title = "Home".localized()
+        self.delegate = self
         tabBarController?.tabBar.barTintColor = UIColor.white
         tabBarController?.tabBar.backgroundColor = UIColor.white
     }
@@ -76,7 +77,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         return 1
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-
+        
         let myLabel = UILabel()
         myLabel.frame = CGRect(x: 65, y: 0, width: 320, height: 20)
         myLabel.font = UIFont.myBoldSystemFont(ofSize: 20)
@@ -96,6 +97,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeue() as CategoriesTableViewCollectionCell
+            cell.delegate = self
             return cell
         case 1:
             let cell = tableView.dequeue() as
@@ -137,14 +139,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-            guard let url = URL(string: Links.videoLink) else {return}
-            let player = AVPlayer(url: url)
-            playerController = AVPlayerViewController()
-            playerController.player = player
-            playerController.allowsPictureInPicturePlayback = true
-            playerController.delegate = self
-            playerController.player?.play()
-            self.present(playerController, animated: true, completion: nil)
+        guard let url = URL(string: Links.videoLink) else {return}
+        let player = AVPlayer(url: url)
+        playerController = AVPlayerViewController()
+        playerController.player = player
+        playerController.allowsPictureInPicturePlayback = true
+        playerController.delegate = self
+        playerController.player?.play()
+        self.present(playerController, animated: true, completion: nil)
     }
 }
 //MARK: - CollectionView Layout
@@ -161,5 +163,17 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
+    }
+}
+//MARK: - Navigation
+extension HomeViewController: HomeViewCellDelegate {
+    func didTapButton(cell: CategoriesCollectionViewCell) {
+        if cell.lblCategoryName.text ==  "Intro".localized() {
+            viewModel.router?.trigger(.intro)
+        } else if cell.lblCategoryName.text ==  "Unit1".localized() {
+            viewModel.router?.trigger(.unit1)
+        } else if cell.lblCategoryName.text ==  "Unit2".localized() {
+            viewModel.router?.trigger(.unit2)
+        }
     }
 }

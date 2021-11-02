@@ -6,8 +6,8 @@
 //
 
 import UIKit
+import XCoordinator
 
 class SecondUnitViewModel {
-
-
+    var router: UnownedRouter<HomeRoute>?
 }

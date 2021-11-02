@@ -65,6 +65,8 @@
 		EAF477702731792300D31ABE /* SecondUnitFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */; };
 		EAF477722731796400D31ABE /* SecondUnitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477712731796400D31ABE /* SecondUnitConstants.swift */; };
 		EAF477762731798B00D31ABE /* Unit2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF477752731798B00D31ABE /* Unit2.storyboard */; };
+		EAF477792731856B00D31ABE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477782731856B00D31ABE /* IntroViewController.swift */; };
+		EAF4777B2731857200D31ABE /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF4777A2731857200D31ABE /* Intro.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitFormViewController.swift; sourceTree = "<group>"; };
 		EAF477712731796400D31ABE /* SecondUnitConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitConstants.swift; sourceTree = "<group>"; };
 		EAF477752731798B00D31ABE /* Unit2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unit2.storyboard; sourceTree = "<group>"; };
+		EAF477782731856B00D31ABE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		EAF4777A2731857200D31ABE /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,11 +317,11 @@
 		EA7DE4E02730115D00FB0C8B /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				EAC3A02427303DFC0038CB85 /* AppCordinator.swift */,
 				EA7DE4E92730133300FB0C8B /* Storyboarded.swift */,
 				EAC3A01727303BCB0038CB85 /* TabBarCordinator.swift */,
 				EAC3A01927303C010038CB85 /* HomeRouter.swift */,
 				EAC3A01B27303C090038CB85 /* MoreRouter.swift */,
-				EAC3A02427303DFC0038CB85 /* AppCordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -515,6 +519,7 @@
 		EAF4775A27315D0C00D31ABE /* ActiveCollectionCategories */ = {
 			isa = PBXGroup;
 			children = (
+				EAF477772731855F00D31ABE /* Intro */,
 				EAF47768273178D100D31ABE /* Unit1 */,
 				EAF47767273178C400D31ABE /* Unit2 */,
 			);
@@ -545,6 +550,15 @@
 				EAF4776527315DCD00D31ABE /* Unit1.storyboard */,
 			);
 			path = Unit1;
+			sourceTree = "<group>";
+		};
+		EAF477772731855F00D31ABE /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				EAF477782731856B00D31ABE /* IntroViewController.swift */,
+				EAF4777A2731857200D31ABE /* Intro.storyboard */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -676,6 +690,7 @@
 				EAC3A00C27302C850038CB85 /* Tajawal-ExtraLight.ttf in Resources */,
 				EAC3A00D27302C850038CB85 /* Tajawal-Light.ttf in Resources */,
 				EA7DE4AE273010C500FB0C8B /* Main.storyboard in Resources */,
+				EAF4777B2731857200D31ABE /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,6 +825,7 @@
 				EAC3A02527303DFC0038CB85 /* AppCordinator.swift in Sources */,
 				EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */,
 				EA7DE4E5273011E600FB0C8B /* Localizable.swift in Sources */,
+				EAF477792731856B00D31ABE /* IntroViewController.swift in Sources */,
 				EA7DE4A9273010C500FB0C8B /* SceneDelegate.swift in Sources */,
 				EAC3A02127303D160038CB85 /* MoreViewModel.swift in Sources */,
 				EA7DE4E82730131F00FB0C8B /* Fonts.swift in Sources */,

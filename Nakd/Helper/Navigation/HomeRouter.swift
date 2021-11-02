@@ -11,7 +11,9 @@ import SafariServices
 // make route has tab controller or navigation controller or a new root view controller
 enum HomeRoute: Route {
     case home
+    case intro
     case unit1
+    case unit2
 }
 class HomeCoordinator: NavigationCoordinator<HomeRoute> {
     init() {
@@ -21,11 +23,18 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
         switch route {
         case .home:
             let viewController = HomeViewController.instaintiate(on: .mainView)
-            viewController.viewModel.router = strongRouter
+            viewController.viewModel.router = unownedRouter
+            return .push(viewController)
+        case .intro:
+            let viewController = IntroViewController.instaintiate(on: .intro)
             return .push(viewController)
         case .unit1:
-            let viewC = FirstUnitViewController.instaintiate(on: .firstUnit)
-            viewC.viewModel.router = unownedRouter
+            let viewController = FirstUnitViewController.instaintiate(on: .firstUnit)
+            viewController.viewModel.router = unownedRouter
+            return .push(viewController)
+        case .unit2:
+            let viewController = SecondUnitViewController.instaintiate(on: .secondUnit)
+            viewController.viewModel.router = unownedRouter
             return .push(viewController)
         }
     }

@@ -11,6 +11,7 @@ class CategoriesTableViewCollectionCell: UITableViewCell {
     //MARK: - props
     @IBOutlet weak var collectionView: UICollectionView!
     var viewModel: HomeViewModel?
+    weak var delegate: HomeViewCellDelegate?
     let data = ["dd", "dd"]
     //MARK: - LifeCycle
     override func awakeFromNib() {
@@ -50,15 +51,6 @@ extension CategoriesTableViewCollectionCell: UICollectionViewDelegate, UICollect
  }
 extension CategoriesTableViewCollectionCell : DetailViewCellDelegate {
     func didTapButton(cell: CategoriesCollectionViewCell, didTappedThe button: UIButton?) {
-        guard let indexPath = collectionView.indexPath(for: cell) else {
-            return
-        }
-        if indexPath.row == 0 {
-            print("intro")
-        } else if indexPath.row == 1 {
-            print("unit1")
-        } else if indexPath.row == 2 {
-            print("unit2")
-        }
+        delegate?.didTapButton(cell: cell)
     }
 }

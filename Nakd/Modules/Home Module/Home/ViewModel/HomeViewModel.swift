@@ -9,5 +9,5 @@ import Foundation
 import XCoordinator
 
 class HomeViewModel {
-    var router: StrongRouter<HomeRoute>?
+    var router: UnownedRouter<HomeRoute>?
 }

@@ -26,7 +26,7 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
             let splashVC = SplashViewController.instaintiate(on: .mainView)
             splashVC.router = strongRouter
             splashVC.modalPresentationStyle = .fullScreen
-            return .present(splashVC)
+            return .push(splashVC)
         case .home:
             let tabCoordinator = HomeTabBarCoordinator()
             tabCoordinator.rootViewController.navigationController?.navigationBar.prefersLargeTitles = true

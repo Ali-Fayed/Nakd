@@ -13,7 +13,9 @@ protocol Storyboarded {
 }
 enum AppStoryboards: String {
     case mainView = "Main"
+    case intro = "Intro"
     case firstUnit = "Unit1"
+    case secondUnit = "Unit2"
 }
 
 extension Storyboarded where Self: UIViewController {

@@ -35,3 +35,6 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
 protocol DetailViewCellDelegate: AnyObject {
     func didTapButton(cell:CategoriesCollectionViewCell, didTappedThe button:UIButton?)
 }
+protocol HomeViewCellDelegate: AnyObject {
+    func didTapButton(cell:CategoriesCollectionViewCell)
+}
