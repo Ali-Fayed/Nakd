@@ -10,17 +10,23 @@ import Foundation
 import XCoordinator
 
 enum AppRoute: Route {
+    case splash
     case home
 }
 
 class AppCoordinator: NavigationCoordinator<AppRoute> {
     // MARK: Initialization
     init() {
-        super.init(initialRoute: .home)
+        super.init(initialRoute: .splash)
     }
     // MARK: Overrides
     override func prepareTransition(for route: AppRoute) -> NavigationTransition {
         switch route {
+        case .splash:
+            let splashVC = SplashViewController.instaintiate(on: .mainView)
+            splashVC.router = strongRouter
+            splashVC.modalPresentationStyle = .fullScreen
+            return .present(splashVC)
         case .home:
             let tabCoordinator = HomeTabBarCoordinator()
             tabCoordinator.rootViewController.navigationController?.navigationBar.prefersLargeTitles = true

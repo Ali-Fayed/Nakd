@@ -8,7 +8,7 @@
 import UIKit
 
 class MoreTableViewCell: UITableViewCell {
-
+    var data = ["الأهداف", "لماذا ناقد", "من نحن", "تواصل معنا"]
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -16,7 +16,7 @@ class MoreTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-    func setData () {
-        textLabel?.text = "MoreDummy".localized()
+    func setData (indexPath: IndexPath) {
+        textLabel?.text = data[indexPath.row]
     }
 }

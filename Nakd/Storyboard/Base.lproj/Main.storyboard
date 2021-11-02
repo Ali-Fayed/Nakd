@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GT4-nH-1WC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LoT-3l-2RD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -125,6 +126,59 @@
             </objects>
             <point key="canvasLocation" x="1228" y="-643"/>
         </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="ddk-74-CdG">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="LoT-3l-2RD" customClass="SplashViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ycS-lS-3vX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rua-dk-ZVH">
+                                <rect key="frame" x="51" y="126" width="291" height="181"/>
+                                <string key="text">مرحبًا بك انا ناقد 
+سأكون معك خلال رحلتك بالتطبيق أتمني لك تجربه تعليميه ممتعه قم بتقييمي اذا اعجبك المحتوي</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBg-oc-J78">
+                                <rect key="frame" x="147" y="428" width="120" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Pwb-nd-Z4t"/>
+                                    <constraint firstAttribute="height" constant="40" id="dOW-sP-IQ1"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="الاستمرار">
+                                    <fontDescription key="titleFontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continuteButtonPressed:" destination="LoT-3l-2RD" eventType="touchUpInside" id="Bs9-3B-h85"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lfE-DQ-dcX"/>
+                        <color key="backgroundColor" name="navColor"/>
+                        <constraints>
+                            <constraint firstItem="lfE-DQ-dcX" firstAttribute="bottom" secondItem="Rua-dk-ZVH" secondAttribute="bottom" constant="555" id="Cas-y8-GPb"/>
+                            <constraint firstItem="lfE-DQ-dcX" firstAttribute="trailing" secondItem="Rua-dk-ZVH" secondAttribute="trailing" constant="72" id="eyb-6U-ocS"/>
+                            <constraint firstItem="Rua-dk-ZVH" firstAttribute="leading" secondItem="lfE-DQ-dcX" secondAttribute="leading" constant="51" id="fUB-ep-Io6"/>
+                            <constraint firstItem="Rua-dk-ZVH" firstAttribute="top" secondItem="lfE-DQ-dcX" secondAttribute="top" constant="82" id="mea-6d-ZWq"/>
+                            <constraint firstItem="oBg-oc-J78" firstAttribute="centerX" secondItem="ycS-lS-3vX" secondAttribute="centerX" id="rmP-oX-UYp"/>
+                            <constraint firstItem="oBg-oc-J78" firstAttribute="centerY" secondItem="ycS-lS-3vX" secondAttribute="centerY" id="yzq-iA-i0c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="oBg-oc-J78" id="h0n-CQ-HYa"/>
+                        <outlet property="nakdLabel" destination="Rua-dk-ZVH" id="gci-a7-qT6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDi-2H-XOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928.985507246377" y="-644.19642857142856"/>
+        </scene>
         <!--More-->
         <scene sceneID="19m-CY-5sF">
             <objects>
@@ -186,6 +240,12 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="navColor">
+            <color red="0.01277863141" green="0.85377866030000005" blue="0.77808898689999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

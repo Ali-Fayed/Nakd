@@ -51,6 +51,8 @@
 		EAD554022730952A00F5F26B /* CategoriesTableViewCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD554002730952A00F5F26B /* CategoriesTableViewCollectionCell.xib */; };
 		EAD5540E273096F400F5F26B /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5540C273096F400F5F26B /* CategoriesCollectionViewCell.swift */; };
 		EAD5540F273096F400F5F26B /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD5540D273096F400F5F26B /* CategoriesCollectionViewCell.xib */; };
+		EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477552731431C00D31ABE /* SplashViewController.swift */; };
+		EAF477582731435700D31ABE /* robot.json in Resources */ = {isa = PBXBuildFile; fileRef = EAF477572731435700D31ABE /* robot.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,8 @@
 		EAD554002730952A00F5F26B /* CategoriesTableViewCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesTableViewCollectionCell.xib; sourceTree = "<group>"; };
 		EAD5540C273096F400F5F26B /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		EAD5540D273096F400F5F26B /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		EAF477552731431C00D31ABE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		EAF477572731435700D31ABE /* robot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = robot.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,7 @@
 		EA7DE4A5273010C500FB0C8B /* Nakd */ = {
 			isa = PBXGroup;
 			children = (
+				EAF477572731435700D31ABE /* robot.json */,
 				EA7DE4D9273010D600FB0C8B /* App Delegate */,
 				EA7DE4DC2730110500FB0C8B /* Modules */,
 				EA7DE4DA273010EA00FB0C8B /* Storyboard */,
@@ -262,6 +267,7 @@
 		EA7DE4DC2730110500FB0C8B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EAF477542731430000D31ABE /* SplashScreen */,
 				EAC3A0142730386E0038CB85 /* Home Module */,
 				EAC3A01D27303C5F0038CB85 /* More Module */,
 				EAC3A02A273041B40038CB85 /* TabBar */,
@@ -465,6 +471,14 @@
 			path = TableViewCollectionCell;
 			sourceTree = "<group>";
 		};
+		EAF477542731430000D31ABE /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EAF477552731431C00D31ABE /* SplashViewController.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -577,6 +591,7 @@
 			files = (
 				EA7DE4B6273010C600FB0C8B /* LaunchScreen.storyboard in Resources */,
 				EAD06A1527309A1900AFBE93 /* OthersTableViewCollectionCell.xib in Resources */,
+				EAF477582731435700D31ABE /* robot.json in Resources */,
 				EAC3A00A27302C850038CB85 /* Tajawal-Regular.ttf in Resources */,
 				EA7DE4E32730117900FB0C8B /* Localizable.strings in Resources */,
 				EAC3A01027302C850038CB85 /* Tajawal-Black.ttf in Resources */,
@@ -723,6 +738,7 @@
 				EAC3A01327302D020038CB85 /* TableViewExt.swift in Sources */,
 				EA7DE4A7273010C500FB0C8B /* AppDelegate.swift in Sources */,
 				EAC3A02527303DFC0038CB85 /* AppCordinator.swift in Sources */,
+				EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */,
 				EA7DE4E5273011E600FB0C8B /* Localizable.swift in Sources */,
 				EA7DE4A9273010C500FB0C8B /* SceneDelegate.swift in Sources */,
 				EAC3A02127303D160038CB85 /* MoreViewModel.swift in Sources */,
