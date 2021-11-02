@@ -120,7 +120,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
-    
+    }
 }
 //MARK: - CollectionView
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
