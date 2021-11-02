@@ -1,0 +1,30 @@
+//
+//  CategoriesCollectionViewCell.swift
+//  Nakd
+//
+//  Created by Ali Fayed on 01/11/2021.
+//
+
+import UIKit
+import Kingfisher
+
+class CategoriesCollectionViewCell: UICollectionViewCell {
+    var model = ["Intro".localized(), "Unit1".localized(), "Unit2".localized()]
+    var desc = ["IntroDesc".localized(), "Unit1Desc".localized(), "Unit2Desc".localized()]
+    var images = ["intro", "unit1", "unit2"]
+    @IBOutlet weak var descriptionTitle: UILabel!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var catContentView: UIView!
+    @IBOutlet weak var imgCategory: UIImageView!
+    @IBOutlet weak var lblCategoryName: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        continueButton.layer.cornerRadius = 10
+        catContentView.layer.cornerRadius = 10
+    }
+    func setData(indexPath: IndexPath) {
+        lblCategoryName.text = model[indexPath.row]
+        descriptionTitle.text = desc[indexPath.row]
+        imgCategory.image = UIImage(named: images[indexPath.row])
+    }
+}

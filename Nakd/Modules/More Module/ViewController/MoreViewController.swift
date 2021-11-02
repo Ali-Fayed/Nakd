@@ -20,6 +20,8 @@ class MoreViewController: UIViewController {
     //MARK: - UI methods
     func UIconfig () {
         title = "More".localized()
+        tabBarController?.tabBar.barTintColor = UIColor.white
+        tabBarController?.tabBar.backgroundColor = UIColor.white
     }
     func tableViewConfig () {
         tableView.delegate = self

@@ -33,6 +33,8 @@ class HomeViewController: UIViewController, AVPlayerViewControllerDelegate {
     //MARK: - UI methods
     func UIconfig () {
         title = "Home".localized()
+        tabBarController?.tabBar.barTintColor = UIColor.white
+        tabBarController?.tabBar.backgroundColor = UIColor.white
     }
     func tableViewConfig () {
         tableView.delegate = self
@@ -110,7 +112,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         return IndexPath()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 210
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()

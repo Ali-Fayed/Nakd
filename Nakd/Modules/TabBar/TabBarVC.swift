@@ -12,6 +12,7 @@ class TabBarViewController: UITabBarController {
     var router: UnownedRouter<TabBarRoute>?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBar.barTintColor = UIColor.black
     }
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 0 {
