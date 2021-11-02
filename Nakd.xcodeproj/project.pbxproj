@@ -52,14 +52,12 @@
 		EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477552731431C00D31ABE /* SplashViewController.swift */; };
 		EAF477582731435700D31ABE /* robot.json in Resources */ = {isa = PBXBuildFile; fileRef = EAF477572731435700D31ABE /* robot.json */; };
 		EAF4775C27315D2E00D31ABE /* FirstUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */; };
-		EAF4775E27315D3B00D31ABE /* FirstUnitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4775D27315D3B00D31ABE /* FirstUnitModel.swift */; };
 		EAF4776027315D4500D31ABE /* FirstUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4775F27315D4500D31ABE /* FirstUnitViewModel.swift */; };
 		EAF4776227315D5100D31ABE /* FirstModelConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4776127315D5100D31ABE /* FirstModelConstants.swift */; };
 		EAF4776427315D5E00D31ABE /* FirstUnitFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4776327315D5E00D31ABE /* FirstUnitFormViewController.swift */; };
 		EAF4776627315DCD00D31ABE /* Unit1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF4776527315DCD00D31ABE /* Unit1.storyboard */; };
 		EAF4776A273178F200D31ABE /* SecondUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF47769273178F200D31ABE /* SecondUnitViewController.swift */; };
 		EAF4776C2731790900D31ABE /* SecondUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4776B2731790900D31ABE /* SecondUnitViewModel.swift */; };
-		EAF4776E2731791600D31ABE /* SecondUnitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4776D2731791600D31ABE /* SecondUnitModel.swift */; };
 		EAF477702731792300D31ABE /* SecondUnitFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */; };
 		EAF477722731796400D31ABE /* SecondUnitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477712731796400D31ABE /* SecondUnitConstants.swift */; };
 		EAF477762731798B00D31ABE /* Unit2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF477752731798B00D31ABE /* Unit2.storyboard */; };
@@ -71,6 +69,16 @@
 		EAF477832731947500D31ABE /* SecondUnitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF477812731947500D31ABE /* SecondUnitCollectionViewCell.xib */; };
 		EAF477882731A98500D31ABE /* MoreCollectionsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477862731A98500D31ABE /* MoreCollectionsViewCell.swift */; };
 		EAF477892731A98500D31ABE /* MoreCollectionsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF477872731A98500D31ABE /* MoreCollectionsViewCell.xib */; };
+		EAF4778C2731AFC100D31ABE /* SecondUnitGraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */; };
+		EAF4778E2731AFD700D31ABE /* SeconUnitAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4778D2731AFD700D31ABE /* SeconUnitAboutViewController.swift */; };
+		EAF477902731AFFA00D31ABE /* SecondUnitVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */; };
+		EAF477942731B05F00D31ABE /* FirstUnitGraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477932731B05F00D31ABE /* FirstUnitGraphsViewController.swift */; };
+		EAF477962731B07A00D31ABE /* FirstUnitVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */; };
+		EAF477982731B08E00D31ABE /* FirstUnitAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477972731B08E00D31ABE /* FirstUnitAboutViewController.swift */; };
+		EAF4779B2731B0DC00D31ABE /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779A2731B0DC00D31ABE /* GoalsViewController.swift */; };
+		EAF4779D2731B0E700D31ABE /* WhyUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779C2731B0E700D31ABE /* WhyUsViewController.swift */; };
+		EAF4779F2731B0F400D31ABE /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779E2731B0F400D31ABE /* ContactUsViewController.swift */; };
+		EAF477A12731B10600D31ABE /* WhoUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477A02731B10600D31ABE /* WhoUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,14 +156,12 @@
 		EAF477552731431C00D31ABE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		EAF477572731435700D31ABE /* robot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = robot.json; sourceTree = "<group>"; };
 		EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitViewController.swift; sourceTree = "<group>"; };
-		EAF4775D27315D3B00D31ABE /* FirstUnitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitModel.swift; sourceTree = "<group>"; };
 		EAF4775F27315D4500D31ABE /* FirstUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitViewModel.swift; sourceTree = "<group>"; };
 		EAF4776127315D5100D31ABE /* FirstModelConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModelConstants.swift; sourceTree = "<group>"; };
 		EAF4776327315D5E00D31ABE /* FirstUnitFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitFormViewController.swift; sourceTree = "<group>"; };
 		EAF4776527315DCD00D31ABE /* Unit1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unit1.storyboard; sourceTree = "<group>"; };
 		EAF47769273178F200D31ABE /* SecondUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitViewController.swift; sourceTree = "<group>"; };
 		EAF4776B2731790900D31ABE /* SecondUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitViewModel.swift; sourceTree = "<group>"; };
-		EAF4776D2731791600D31ABE /* SecondUnitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitModel.swift; sourceTree = "<group>"; };
 		EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitFormViewController.swift; sourceTree = "<group>"; };
 		EAF477712731796400D31ABE /* SecondUnitConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitConstants.swift; sourceTree = "<group>"; };
 		EAF477752731798B00D31ABE /* Unit2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unit2.storyboard; sourceTree = "<group>"; };
@@ -167,6 +173,16 @@
 		EAF477812731947500D31ABE /* SecondUnitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondUnitCollectionViewCell.xib; sourceTree = "<group>"; };
 		EAF477862731A98500D31ABE /* MoreCollectionsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionsViewCell.swift; sourceTree = "<group>"; };
 		EAF477872731A98500D31ABE /* MoreCollectionsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreCollectionsViewCell.xib; sourceTree = "<group>"; };
+		EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitGraphsViewController.swift; sourceTree = "<group>"; };
+		EAF4778D2731AFD700D31ABE /* SeconUnitAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconUnitAboutViewController.swift; sourceTree = "<group>"; };
+		EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitVideosViewController.swift; sourceTree = "<group>"; };
+		EAF477932731B05F00D31ABE /* FirstUnitGraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitGraphsViewController.swift; sourceTree = "<group>"; };
+		EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitVideosViewController.swift; sourceTree = "<group>"; };
+		EAF477972731B08E00D31ABE /* FirstUnitAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitAboutViewController.swift; sourceTree = "<group>"; };
+		EAF4779A2731B0DC00D31ABE /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		EAF4779C2731B0E700D31ABE /* WhyUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyUsViewController.swift; sourceTree = "<group>"; };
+		EAF4779E2731B0F400D31ABE /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		EAF477A02731B10600D31ABE /* WhoUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,7 +261,6 @@
 		EA7DE4A5273010C500FB0C8B /* Nakd */ = {
 			isa = PBXGroup;
 			children = (
-				EAF477572731435700D31ABE /* robot.json */,
 				EA7DE4D9273010D600FB0C8B /* App Delegate */,
 				EA7DE4DC2730110500FB0C8B /* Modules */,
 				EA7DE4DA273010EA00FB0C8B /* Storyboard */,
@@ -294,6 +309,7 @@
 		EA7DE4DB273010FE00FB0C8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				EAF477572731435700D31ABE /* robot.json */,
 				EA7DE4B2273010C600FB0C8B /* Assets.xcassets */,
 				EA7DE4AF273010C500FB0C8B /* Nakd.xcdatamodeld */,
 			);
@@ -378,9 +394,9 @@
 		EAC3A01D27303C5F0038CB85 /* More Module */ = {
 			isa = PBXGroup;
 			children = (
+				EAD06A1A2730A59200AFBE93 /* MoreVC */,
+				EAF477A22731B10B00D31ABE /* Components */,
 				EAD06A1C2730A6E700AFBE93 /* CustomCells */,
-				EAD06A1A2730A59200AFBE93 /* ViewController */,
-				EAD06A1B2730A59A00AFBE93 /* ViewModel */,
 			);
 			path = "More Module";
 			sourceTree = "<group>";
@@ -426,20 +442,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EAD06A1A2730A59200AFBE93 /* ViewController */ = {
+		EAD06A1A2730A59200AFBE93 /* MoreVC */ = {
 			isa = PBXGroup;
 			children = (
 				EAC3A01E27303C6F0038CB85 /* MoreViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		EAD06A1B2730A59A00AFBE93 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
 				EAC3A02027303D160038CB85 /* MoreViewModel.swift */,
 			);
-			path = ViewModel;
+			path = MoreVC;
 			sourceTree = "<group>";
 		};
 		EAD06A1C2730A6E700AFBE93 /* CustomCells */ = {
@@ -528,38 +537,28 @@
 			isa = PBXGroup;
 			children = (
 				EAF477772731855F00D31ABE /* Intro */,
-				EAF47768273178D100D31ABE /* Unit1 */,
-				EAF47767273178C400D31ABE /* Unit2 */,
+				EAF47768273178D100D31ABE /* FirstUnit */,
+				EAF47767273178C400D31ABE /* SecondUnit */,
 			);
 			path = ActiveCollectionCategories;
 			sourceTree = "<group>";
 		};
-		EAF47767273178C400D31ABE /* Unit2 */ = {
+		EAF47767273178C400D31ABE /* SecondUnit */ = {
 			isa = PBXGroup;
 			children = (
-				EAF47769273178F200D31ABE /* SecondUnitViewController.swift */,
-				EAF4776B2731790900D31ABE /* SecondUnitViewModel.swift */,
-				EAF4776D2731791600D31ABE /* SecondUnitModel.swift */,
-				EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */,
-				EAF477712731796400D31ABE /* SecondUnitConstants.swift */,
-				EAF477752731798B00D31ABE /* Unit2.storyboard */,
-				EAF47785273194F200D31ABE /* CollectionCell */,
+				EAF4778A2731AF8F00D31ABE /* Unit2VC */,
+				EAF477912731B00700D31ABE /* Components */,
 			);
-			path = Unit2;
+			path = SecondUnit;
 			sourceTree = "<group>";
 		};
-		EAF47768273178D100D31ABE /* Unit1 */ = {
+		EAF47768273178D100D31ABE /* FirstUnit */ = {
 			isa = PBXGroup;
 			children = (
-				EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */,
-				EAF4775D27315D3B00D31ABE /* FirstUnitModel.swift */,
-				EAF4775F27315D4500D31ABE /* FirstUnitViewModel.swift */,
-				EAF4776127315D5100D31ABE /* FirstModelConstants.swift */,
-				EAF4776327315D5E00D31ABE /* FirstUnitFormViewController.swift */,
-				EAF4776527315DCD00D31ABE /* Unit1.storyboard */,
-				EAF47784273194E500D31ABE /* CollectionCell */,
+				EAF477922731B04300D31ABE /* Unit1VC */,
+				EAF477992731B09300D31ABE /* Components */,
 			);
-			path = Unit1;
+			path = FirstUnit;
 			sourceTree = "<group>";
 		};
 		EAF477772731855F00D31ABE /* Intro */ = {
@@ -587,6 +586,63 @@
 				EAF477812731947500D31ABE /* SecondUnitCollectionViewCell.xib */,
 			);
 			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		EAF4778A2731AF8F00D31ABE /* Unit2VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAF47769273178F200D31ABE /* SecondUnitViewController.swift */,
+				EAF477752731798B00D31ABE /* Unit2.storyboard */,
+				EAF4776B2731790900D31ABE /* SecondUnitViewModel.swift */,
+				EAF47785273194F200D31ABE /* CollectionCell */,
+			);
+			path = Unit2VC;
+			sourceTree = "<group>";
+		};
+		EAF477912731B00700D31ABE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EAF477712731796400D31ABE /* SecondUnitConstants.swift */,
+				EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */,
+				EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */,
+				EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */,
+				EAF4778D2731AFD700D31ABE /* SeconUnitAboutViewController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EAF477922731B04300D31ABE /* Unit1VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4776127315D5100D31ABE /* FirstModelConstants.swift */,
+				EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */,
+				EAF4775F27315D4500D31ABE /* FirstUnitViewModel.swift */,
+				EAF4776527315DCD00D31ABE /* Unit1.storyboard */,
+				EAF47784273194E500D31ABE /* CollectionCell */,
+			);
+			path = Unit1VC;
+			sourceTree = "<group>";
+		};
+		EAF477992731B09300D31ABE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4776327315D5E00D31ABE /* FirstUnitFormViewController.swift */,
+				EAF477932731B05F00D31ABE /* FirstUnitGraphsViewController.swift */,
+				EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */,
+				EAF477972731B08E00D31ABE /* FirstUnitAboutViewController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EAF477A22731B10B00D31ABE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4779A2731B0DC00D31ABE /* GoalsViewController.swift */,
+				EAF4779C2731B0E700D31ABE /* WhyUsViewController.swift */,
+				EAF4779E2731B0F400D31ABE /* ContactUsViewController.swift */,
+				EAF477A02731B10600D31ABE /* WhoUsViewController.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -852,6 +908,7 @@
 				EAC3A01F27303C6F0038CB85 /* MoreViewController.swift in Sources */,
 				EAC3A01327302D020038CB85 /* TableViewExt.swift in Sources */,
 				EA7DE4A7273010C500FB0C8B /* AppDelegate.swift in Sources */,
+				EAF4779B2731B0DC00D31ABE /* GoalsViewController.swift in Sources */,
 				EAC3A02527303DFC0038CB85 /* AppCordinator.swift in Sources */,
 				EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */,
 				EA7DE4E5273011E600FB0C8B /* Localizable.swift in Sources */,
@@ -862,28 +919,35 @@
 				EAC3A01827303BCB0038CB85 /* TabBarCordinator.swift in Sources */,
 				EAD554012730952A00F5F26B /* CategoriesTableViewCollectionCell.swift in Sources */,
 				EAC3A01C27303C090038CB85 /* MoreRouter.swift in Sources */,
+				EAF477902731AFFA00D31ABE /* SecondUnitVideosViewController.swift in Sources */,
 				EA7DE4B1273010C500FB0C8B /* Nakd.xcdatamodeld in Sources */,
 				EAF4775C27315D2E00D31ABE /* FirstUnitViewController.swift in Sources */,
+				EAF477982731B08E00D31ABE /* FirstUnitAboutViewController.swift in Sources */,
 				EAD06A1427309A1900AFBE93 /* OthersTableViewCollectionCell.swift in Sources */,
 				EAF4776227315D5100D31ABE /* FirstModelConstants.swift in Sources */,
 				EAF4776427315D5E00D31ABE /* FirstUnitFormViewController.swift in Sources */,
 				EA7DE4EA2730133300FB0C8B /* Storyboarded.swift in Sources */,
 				EAF477722731796400D31ABE /* SecondUnitConstants.swift in Sources */,
 				EAD06A102730998500AFBE93 /* OthersCollectionViewCell.swift in Sources */,
+				EAF477962731B07A00D31ABE /* FirstUnitVideosViewController.swift in Sources */,
 				EAF4776027315D4500D31ABE /* FirstUnitViewModel.swift in Sources */,
 				EAF4776A273178F200D31ABE /* SecondUnitViewController.swift in Sources */,
-				EAF4775E27315D3B00D31ABE /* FirstUnitModel.swift in Sources */,
 				EAF4776C2731790900D31ABE /* SecondUnitViewModel.swift in Sources */,
+				EAF477A12731B10600D31ABE /* WhoUsViewController.swift in Sources */,
 				EAC3A0162730387A0038CB85 /* Constants.swift in Sources */,
 				EAF477822731947500D31ABE /* SecondUnitCollectionViewCell.swift in Sources */,
-				EAF4776E2731791600D31ABE /* SecondUnitModel.swift in Sources */,
 				EAD5540E273096F400F5F26B /* CategoriesCollectionViewCell.swift in Sources */,
 				EAF477702731792300D31ABE /* SecondUnitFormViewController.swift in Sources */,
+				EAF4779D2731B0E700D31ABE /* WhyUsViewController.swift in Sources */,
 				EAC3A02727303E500038CB85 /* TabBarVC.swift in Sources */,
 				EAC3A02327303D1F0038CB85 /* HomeViewModel.swift in Sources */,
+				EAF4778E2731AFD700D31ABE /* SeconUnitAboutViewController.swift in Sources */,
 				EAF4777E2731934900D31ABE /* FirstUnitCollectionViewCell.swift in Sources */,
 				EAC3A01A27303C010038CB85 /* HomeRouter.swift in Sources */,
+				EAF4778C2731AFC100D31ABE /* SecondUnitGraphsViewController.swift in Sources */,
 				EAF477882731A98500D31ABE /* MoreCollectionsViewCell.swift in Sources */,
+				EAF477942731B05F00D31ABE /* FirstUnitGraphsViewController.swift in Sources */,
+				EAF4779F2731B0F400D31ABE /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
