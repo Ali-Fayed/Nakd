@@ -37,6 +37,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="collectionView" destination="AfB-Tv-nY9" id="WkI-1R-rDo"/>
             </connections>

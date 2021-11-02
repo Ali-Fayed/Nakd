@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import XCoordinator
+
+class FirstUnitViewModel {
+    var router: UnownedRouter<HomeRoute>?
+}
