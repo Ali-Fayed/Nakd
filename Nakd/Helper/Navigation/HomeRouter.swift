@@ -55,7 +55,7 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit1Quizes:
-            let viewController = FirstUnitGraphsViewController.instaintiate(on: .firstUnit)
+            let viewController = FirstUnitFormViewController.instaintiate(on: .firstUnit)
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)

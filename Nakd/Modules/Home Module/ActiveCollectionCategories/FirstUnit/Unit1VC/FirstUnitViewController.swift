@@ -11,7 +11,6 @@ class FirstUnitViewController: UIViewController {
     var viewModel = FirstUnitViewModel()
     @IBOutlet weak var collectionView: UICollectionView!
     let data = ["dd", "dd"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Unit1".localized()
