@@ -31,16 +31,3 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
         imgCategory.image = UIImage(named: images[indexPath.row])
     }
 }
-//MARK: - protocol
-protocol DetailViewCellDelegate: AnyObject {
-    func didTapButton(cell: CategoriesCollectionViewCell, didTappedThe button:UIButton?)
-}
-protocol HomeViewCellDelegate: AnyObject {
-    func didTapButton(cell: CategoriesCollectionViewCell)
-}
-protocol FirstUnitDelegate: AnyObject {
-    func didTapButton(cell: FirstUnitCollectionViewCell, didTappedThe button:UIButton?)
-}
-protocol SecondUnitDelegate: AnyObject {
-    func didTapButton(cell: SecondUnitCollectionViewCell, didTappedThe button:UIButton?)
-}

@@ -79,6 +79,7 @@
 		EAF4779D2731B0E700D31ABE /* WhyUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779C2731B0E700D31ABE /* WhyUsViewController.swift */; };
 		EAF4779F2731B0F400D31ABE /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779E2731B0F400D31ABE /* ContactUsViewController.swift */; };
 		EAF477A12731B10600D31ABE /* WhoUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477A02731B10600D31ABE /* WhoUsViewController.swift */; };
+		EAF477A52732093000D31ABE /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477A42732093000D31ABE /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 		EAF4779C2731B0E700D31ABE /* WhyUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyUsViewController.swift; sourceTree = "<group>"; };
 		EAF4779E2731B0F400D31ABE /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		EAF477A02731B10600D31ABE /* WhoUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoUsViewController.swift; sourceTree = "<group>"; };
+		EAF477A42732093000D31ABE /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 		EA7DE4DF2730114400FB0C8B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EAF477A32732092000D31ABE /* Protocols */,
 				EAC3A01127302CF60038CB85 /* Extension */,
 				EA7DE4E62730130000FB0C8B /* Fonts */,
 				EA7DE4E12730116600FB0C8B /* Localization */,
@@ -604,7 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */,
-				EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */,
+				EAF477A727320BA900D31ABE /* Video */,
 				EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */,
 				EAF4778D2731AFD700D31ABE /* SeconUnitAboutViewController.swift */,
 			);
@@ -628,7 +631,7 @@
 			children = (
 				EAF4776327315D5E00D31ABE /* FirstUnitFormViewController.swift */,
 				EAF477932731B05F00D31ABE /* FirstUnitGraphsViewController.swift */,
-				EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */,
+				EAF477A62732099400D31ABE /* Viedos */,
 				EAF477972731B08E00D31ABE /* FirstUnitAboutViewController.swift */,
 			);
 			path = Components;
@@ -643,6 +646,30 @@
 				EAF477A02731B10600D31ABE /* WhoUsViewController.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		EAF477A32732092000D31ABE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EAF477A42732093000D31ABE /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EAF477A62732099400D31ABE /* Viedos */ = {
+			isa = PBXGroup;
+			children = (
+				EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */,
+			);
+			path = Viedos;
+			sourceTree = "<group>";
+		};
+		EAF477A727320BA900D31ABE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -934,6 +961,7 @@
 				EAF4776A273178F200D31ABE /* SecondUnitViewController.swift in Sources */,
 				EAF4776C2731790900D31ABE /* SecondUnitViewModel.swift in Sources */,
 				EAF477A12731B10600D31ABE /* WhoUsViewController.swift in Sources */,
+				EAF477A52732093000D31ABE /* Protocols.swift in Sources */,
 				EAC3A0162730387A0038CB85 /* Constants.swift in Sources */,
 				EAF477822731947500D31ABE /* SecondUnitCollectionViewCell.swift in Sources */,
 				EAD5540E273096F400F5F26B /* CategoriesCollectionViewCell.swift in Sources */,

@@ -35,38 +35,60 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             return .push(viewController)
         case .intro:
             let viewController = IntroViewController.instaintiate(on: .intro)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit1:
             let viewController = FirstUnitViewController.instaintiate(on: .firstUnit)
             viewController.viewModel.router = unownedRouter
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit1Videos:
             let viewController = FirstUnitVideosViewController.instaintiate(on: .firstUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit1Graphs:
             let viewController = FirstUnitGraphsViewController.instaintiate(on: .firstUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit1Quizes:
             let viewController = FirstUnitGraphsViewController.instaintiate(on: .firstUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit1About:
             let viewController = FirstUnitAboutViewController.instaintiate(on: .firstUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit2:
             let viewController = SecondUnitViewController.instaintiate(on: .secondUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             viewController.viewModel.router = unownedRouter
             return .push(viewController)
         case .unit2Videos:
             let viewController = SecondUnitVideosViewController.instaintiate(on: .secondUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit2Graphs:
             let viewController = SecondUnitGraphsViewController.instaintiate(on: .secondUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit2Quizes:
             let viewController = SecondUnitFormViewController.instaintiate(on: .secondUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit2About:
             let viewController = SeconUnitAboutViewController.instaintiate(on: .secondUnit)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
 
         }
