@@ -53,4 +53,5 @@ extension CategoriesTableViewCollectionCell : DetailViewCellDelegate {
     func didTapButton(cell: CategoriesCollectionViewCell, didTappedThe button: UIButton?) {
         delegate?.didTapButton(cell: cell)
     }
+    
 }

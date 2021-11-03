@@ -61,6 +61,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="ابدأ الآن">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="qA7-JW-Gt0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <userDefinedRuntimeAttributes>

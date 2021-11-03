@@ -12,6 +12,7 @@ class FirstUnitCollectionViewCell: UICollectionViewCell {
     var model = ["EducationVideos".localized(), "EducationGraphs".localized(), "EducationQuizes".localized(), "AboutUs".localized()]
     var desc = ["EducationVideosDesc".localized(), "EducationGraphsDesc".localized(), "EducationQuizesDesc".localized(), "AboutUsDesc".localized()]
     var images = ["videos", "graphs", "quiz", "why"]
+    weak var delegate: FirstUnitDelegate?
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var catContentView: UIView!
@@ -21,6 +22,9 @@ class FirstUnitCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         continueButton.layer.cornerRadius = 10
         catContentView.layer.cornerRadius = 10
+    }
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        delegate?.didTapButton(cell: self, didTappedThe: sender)
     }
     func setData(indexPath: IndexPath) {
         lblCategoryName.text = model[indexPath.row]

@@ -11,6 +11,7 @@ class SeconUnitAboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "AboutUs".localized()
 
         // Do any additional setup after loading the view.
     }

@@ -20,8 +20,8 @@ class HomeTabBarCoordinator: TabBarCoordinator<TabBarRoute> {
         homeCoordinator.rootViewController.navigationBar.prefersLargeTitles = true
         homeCoordinator.rootViewController.navigationBar.backgroundColor = UIColor(named: "navColor")
         homeCoordinator.rootViewController.navigationItem.largeTitleDisplayMode = .always
-        homeCoordinator.rootViewController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.myMediumSystemFont(ofSize: 35), .foregroundColor: UIColor.black]
-        homeCoordinator.rootViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.myMediumSystemFont(ofSize: 15), .foregroundColor: UIColor.black]
+        homeCoordinator.rootViewController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 30), .foregroundColor: UIColor.black]
+        homeCoordinator.rootViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 15), .foregroundColor: UIColor.black]
         homeCoordinator.rootViewController.tabBarItem =
         UITabBarItem(title: "Home".localized(), image: UIImage(systemName: "homekit"), selectedImage: UIImage(systemName: "homekit"))
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 15)], for: .normal)
@@ -29,8 +29,8 @@ class HomeTabBarCoordinator: TabBarCoordinator<TabBarRoute> {
         let moreCoordinator = MoreCoordinator()
         moreCoordinator.rootViewController.navigationBar.prefersLargeTitles = true
         homeCoordinator.rootViewController.navigationBar.backgroundColor = UIColor(named: "navColor")
-        moreCoordinator.rootViewController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.myMediumSystemFont(ofSize: 35), .foregroundColor: UIColor.black]
-        moreCoordinator.rootViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.myMediumSystemFont(ofSize: 15), .foregroundColor: UIColor.black]
+        moreCoordinator.rootViewController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 30), .foregroundColor: UIColor.black]
+        moreCoordinator.rootViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 15), .foregroundColor: UIColor.black]
         moreCoordinator.rootViewController.navigationItem.largeTitleDisplayMode = .always
         moreCoordinator.rootViewController.tabBarItem =
         UITabBarItem(title: "More".localized(), image: UIImage(systemName: "line.3.horizontal.decrease"), selectedImage: UIImage(systemName: "line.3.horizontal.decrease"))

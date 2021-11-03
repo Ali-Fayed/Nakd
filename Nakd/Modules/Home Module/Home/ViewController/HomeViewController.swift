@@ -57,14 +57,14 @@ class HomeViewController: UIViewController, AVPlayerViewControllerDelegate {
         if counter < imgArr.count {
             let index = IndexPath.init(item: counter, section: 0)
             self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
-            pageControl.currentPage = counter
             counter += 1
+            pageControl.currentPage = counter
         } else {
             counter = 0
             let index = IndexPath.init(item: counter, section: 0)
             self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
-            pageControl.currentPage = counter
             counter = 1
+            pageControl.currentPage = counter
         }
     }
 }

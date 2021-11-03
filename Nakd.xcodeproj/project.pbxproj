@@ -591,8 +591,9 @@
 		EAF4778A2731AF8F00D31ABE /* Unit2VC */ = {
 			isa = PBXGroup;
 			children = (
-				EAF47769273178F200D31ABE /* SecondUnitViewController.swift */,
+				EAF477712731796400D31ABE /* SecondUnitConstants.swift */,
 				EAF477752731798B00D31ABE /* Unit2.storyboard */,
+				EAF47769273178F200D31ABE /* SecondUnitViewController.swift */,
 				EAF4776B2731790900D31ABE /* SecondUnitViewModel.swift */,
 				EAF47785273194F200D31ABE /* CollectionCell */,
 			);
@@ -602,7 +603,6 @@
 		EAF477912731B00700D31ABE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				EAF477712731796400D31ABE /* SecondUnitConstants.swift */,
 				EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */,
 				EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */,
 				EAF4776F2731792300D31ABE /* SecondUnitFormViewController.swift */,

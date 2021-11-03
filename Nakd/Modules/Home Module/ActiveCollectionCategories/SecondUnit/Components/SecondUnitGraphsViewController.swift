@@ -11,7 +11,7 @@ class SecondUnitGraphsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "EducationGraphs".localized()
         // Do any additional setup after loading the view.
     }
     

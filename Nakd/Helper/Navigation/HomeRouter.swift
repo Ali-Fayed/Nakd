@@ -13,7 +13,15 @@ enum HomeRoute: Route {
     case home
     case intro
     case unit1
+    case unit1Videos
+    case unit1Graphs
+    case unit1Quizes
+    case unit1About
     case unit2
+    case unit2Videos
+    case unit2Graphs
+    case unit2Quizes
+    case unit2About
 }
 class HomeCoordinator: NavigationCoordinator<HomeRoute> {
     init() {
@@ -32,10 +40,35 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             let viewController = FirstUnitViewController.instaintiate(on: .firstUnit)
             viewController.viewModel.router = unownedRouter
             return .push(viewController)
+        case .unit1Videos:
+            let viewController = FirstUnitVideosViewController.instaintiate(on: .firstUnit)
+            return .push(viewController)
+        case .unit1Graphs:
+            let viewController = FirstUnitGraphsViewController.instaintiate(on: .firstUnit)
+            return .push(viewController)
+        case .unit1Quizes:
+            let viewController = FirstUnitGraphsViewController.instaintiate(on: .firstUnit)
+            return .push(viewController)
+        case .unit1About:
+            let viewController = FirstUnitAboutViewController.instaintiate(on: .firstUnit)
+            return .push(viewController)
         case .unit2:
             let viewController = SecondUnitViewController.instaintiate(on: .secondUnit)
             viewController.viewModel.router = unownedRouter
             return .push(viewController)
+        case .unit2Videos:
+            let viewController = SecondUnitVideosViewController.instaintiate(on: .secondUnit)
+            return .push(viewController)
+        case .unit2Graphs:
+            let viewController = SecondUnitGraphsViewController.instaintiate(on: .secondUnit)
+            return .push(viewController)
+        case .unit2Quizes:
+            let viewController = SecondUnitFormViewController.instaintiate(on: .secondUnit)
+            return .push(viewController)
+        case .unit2About:
+            let viewController = SeconUnitAboutViewController.instaintiate(on: .secondUnit)
+            return .push(viewController)
+
         }
     }
 }

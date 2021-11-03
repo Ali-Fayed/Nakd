@@ -33,8 +33,14 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
 }
 //MARK: - protocol
 protocol DetailViewCellDelegate: AnyObject {
-    func didTapButton(cell:CategoriesCollectionViewCell, didTappedThe button:UIButton?)
+    func didTapButton(cell: CategoriesCollectionViewCell, didTappedThe button:UIButton?)
 }
 protocol HomeViewCellDelegate: AnyObject {
-    func didTapButton(cell:CategoriesCollectionViewCell)
+    func didTapButton(cell: CategoriesCollectionViewCell)
+}
+protocol FirstUnitDelegate: AnyObject {
+    func didTapButton(cell: FirstUnitCollectionViewCell, didTappedThe button:UIButton?)
+}
+protocol SecondUnitDelegate: AnyObject {
+    func didTapButton(cell: SecondUnitCollectionViewCell, didTappedThe button:UIButton?)
 }

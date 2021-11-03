@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+class FirstUnitFormViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "EducationQuizes".localized()
+    }
+    
+}

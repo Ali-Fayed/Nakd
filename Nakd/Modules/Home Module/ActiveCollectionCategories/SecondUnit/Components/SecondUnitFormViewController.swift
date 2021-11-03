@@ -11,6 +11,7 @@ class SecondUnitFormViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "EducationQuizes".localized()
 
         // Do any additional setup after loading the view.
     }
