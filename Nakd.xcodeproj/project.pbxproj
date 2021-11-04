@@ -81,11 +81,9 @@
 		EAF477882731A98500D31ABE /* MoreCollectionsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477862731A98500D31ABE /* MoreCollectionsViewCell.swift */; };
 		EAF477892731A98500D31ABE /* MoreCollectionsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF477872731A98500D31ABE /* MoreCollectionsViewCell.xib */; };
 		EAF4778C2731AFC100D31ABE /* SecondUnitGraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */; };
-		EAF4778E2731AFD700D31ABE /* SeconUnitAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4778D2731AFD700D31ABE /* SeconUnitAboutViewController.swift */; };
 		EAF477902731AFFA00D31ABE /* SecondUnitVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */; };
 		EAF477942731B05F00D31ABE /* FirstUnitGraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477932731B05F00D31ABE /* FirstUnitGraphsViewController.swift */; };
 		EAF477962731B07A00D31ABE /* FirstUnitVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */; };
-		EAF477982731B08E00D31ABE /* FirstUnitAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477972731B08E00D31ABE /* FirstUnitAboutViewController.swift */; };
 		EAF4779B2731B0DC00D31ABE /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779A2731B0DC00D31ABE /* GoalsViewController.swift */; };
 		EAF4779D2731B0E700D31ABE /* WhyUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779C2731B0E700D31ABE /* WhyUsViewController.swift */; };
 		EAF4779F2731B0F400D31ABE /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4779E2731B0F400D31ABE /* ContactUsViewController.swift */; };
@@ -197,11 +195,9 @@
 		EAF477862731A98500D31ABE /* MoreCollectionsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionsViewCell.swift; sourceTree = "<group>"; };
 		EAF477872731A98500D31ABE /* MoreCollectionsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreCollectionsViewCell.xib; sourceTree = "<group>"; };
 		EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitGraphsViewController.swift; sourceTree = "<group>"; };
-		EAF4778D2731AFD700D31ABE /* SeconUnitAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconUnitAboutViewController.swift; sourceTree = "<group>"; };
 		EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitVideosViewController.swift; sourceTree = "<group>"; };
 		EAF477932731B05F00D31ABE /* FirstUnitGraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitGraphsViewController.swift; sourceTree = "<group>"; };
 		EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitVideosViewController.swift; sourceTree = "<group>"; };
-		EAF477972731B08E00D31ABE /* FirstUnitAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitAboutViewController.swift; sourceTree = "<group>"; };
 		EAF4779A2731B0DC00D31ABE /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		EAF4779C2731B0E700D31ABE /* WhyUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyUsViewController.swift; sourceTree = "<group>"; };
 		EAF4779E2731B0F400D31ABE /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -569,22 +565,6 @@
 			path = Graphs;
 			sourceTree = "<group>";
 		};
-		EAD9F192273353600086F984 /* About */ = {
-			isa = PBXGroup;
-			children = (
-				EAF4778D2731AFD700D31ABE /* SeconUnitAboutViewController.swift */,
-			);
-			path = About;
-			sourceTree = "<group>";
-		};
-		EAD9F1932733536A0086F984 /* About */ = {
-			isa = PBXGroup;
-			children = (
-				EAF477972731B08E00D31ABE /* FirstUnitAboutViewController.swift */,
-			);
-			path = About;
-			sourceTree = "<group>";
-		};
 		EAD9F194273353700086F984 /* Graphs */ = {
 			isa = PBXGroup;
 			children = (
@@ -712,7 +692,6 @@
 				EAD9F191273353570086F984 /* Graphs */,
 				EAF477A727320BA900D31ABE /* Video */,
 				EAD9F190273353520086F984 /* Quiz */,
-				EAD9F192273353600086F984 /* About */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -733,7 +712,6 @@
 				EAD9F1502732EC050086F984 /* Quiz */,
 				EAD9F194273353700086F984 /* Graphs */,
 				EAF477A62732099400D31ABE /* Viedos */,
-				EAD9F1932733536A0086F984 /* About */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1063,7 +1041,6 @@
 				EAD9F1542732EC220086F984 /* FirstUnitQuestionBank.swift in Sources */,
 				EAD9F1A927335DE10086F984 /* FinalQuizQuestionBank.swift in Sources */,
 				EAF4775C27315D2E00D31ABE /* FirstUnitViewController.swift in Sources */,
-				EAF477982731B08E00D31ABE /* FirstUnitAboutViewController.swift in Sources */,
 				EAD06A1427309A1900AFBE93 /* OthersTableViewCollectionCell.swift in Sources */,
 				EAF4776427315D5E00D31ABE /* FirstUnitFormViewController.swift in Sources */,
 				EA7DE4EA2730133300FB0C8B /* Storyboarded.swift in Sources */,
@@ -1084,7 +1061,6 @@
 				EAF4779D2731B0E700D31ABE /* WhyUsViewController.swift in Sources */,
 				EAC3A02727303E500038CB85 /* TabBarVC.swift in Sources */,
 				EAC3A02327303D1F0038CB85 /* HomeViewModel.swift in Sources */,
-				EAF4778E2731AFD700D31ABE /* SeconUnitAboutViewController.swift in Sources */,
 				EAF4777E2731934900D31ABE /* FirstUnitCollectionViewCell.swift in Sources */,
 				EAC3A01A27303C010038CB85 /* HomeRouter.swift in Sources */,
 				EAD9F1522732EC180086F984 /* FirstUnitQuestion.swift in Sources */,

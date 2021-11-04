@@ -126,33 +126,6 @@
             </objects>
             <point key="canvasLocation" x="-833" y="44"/>
         </scene>
-        <!--First Unit About View Controller-->
-        <scene sceneID="k0g-lY-4jH">
-            <objects>
-                <viewController storyboardIdentifier="FirstUnitAboutViewController" id="wak-Yw-kjf" customClass="FirstUnitAboutViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4dI-it-F4b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q0H-nZ-khl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" name="colorBkGray"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="qoS-63-7ll"/>
-                        <color key="backgroundColor" name="navColor"/>
-                        <constraints>
-                            <constraint firstItem="qoS-63-7ll" firstAttribute="bottom" secondItem="q0H-nZ-khl" secondAttribute="bottom" id="IQP-YC-Dft"/>
-                            <constraint firstItem="q0H-nZ-khl" firstAttribute="leading" secondItem="qoS-63-7ll" secondAttribute="leading" id="KE8-ah-Un1"/>
-                            <constraint firstItem="qoS-63-7ll" firstAttribute="trailing" secondItem="q0H-nZ-khl" secondAttribute="trailing" id="dad-Wh-yIG"/>
-                            <constraint firstItem="q0H-nZ-khl" firstAttribute="top" secondItem="qoS-63-7ll" secondAttribute="top" id="f8a-St-ChV"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="onO-wd-B5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2958" y="55"/>
-        </scene>
         <!--First Unit Form View Controller-->
         <scene sceneID="pkn-UP-D2a">
             <objects>

@@ -65,33 +65,6 @@
             </objects>
             <point key="canvasLocation" x="77" y="70"/>
         </scene>
-        <!--Secon Unit About View Controller-->
-        <scene sceneID="Sbe-Mf-NaI">
-            <objects>
-                <viewController storyboardIdentifier="SeconUnitAboutViewController" id="tJV-EG-T8H" customClass="SeconUnitAboutViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nqy-2x-Asw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f1I-2h-IQZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" name="colorBkGray"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="l5k-33-fD2"/>
-                        <color key="backgroundColor" name="navColor"/>
-                        <constraints>
-                            <constraint firstItem="f1I-2h-IQZ" firstAttribute="top" secondItem="l5k-33-fD2" secondAttribute="top" id="Hiv-5r-liV"/>
-                            <constraint firstItem="f1I-2h-IQZ" firstAttribute="leading" secondItem="l5k-33-fD2" secondAttribute="leading" id="Pkr-4Z-1DI"/>
-                            <constraint firstItem="l5k-33-fD2" firstAttribute="trailing" secondItem="f1I-2h-IQZ" secondAttribute="trailing" id="gb4-Pn-iF6"/>
-                            <constraint firstItem="l5k-33-fD2" firstAttribute="bottom" secondItem="f1I-2h-IQZ" secondAttribute="bottom" id="ibK-Wx-Aqv"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ly9-ov-Rwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="739" y="70"/>
-        </scene>
         <!--Second Unit Graphs View Controller-->
         <scene sceneID="BFI-Te-ixG">
             <objects>

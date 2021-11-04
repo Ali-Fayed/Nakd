@@ -16,12 +16,10 @@ enum HomeRoute: Route {
     case unit1Videos
     case unit1Graphs
     case unit1Quizes
-    case unit1About
     case unit2
     case unit2Videos
     case unit2Graphs
     case unit2Quizes
-    case unit2About
     case finalQuiz
 }
 class HomeCoordinator: NavigationCoordinator<HomeRoute> {
@@ -60,11 +58,6 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
-        case .unit1About:
-            let viewController = FirstUnitAboutViewController.instaintiate(on: .firstUnit)
-            viewController.navigationController?.navigationBar.prefersLargeTitles = true
-            viewController.navigationItem.largeTitleDisplayMode = .always
-            return .push(viewController)
         case .unit2:
             let viewController = SecondUnitViewController.instaintiate(on: .secondUnit)
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
@@ -83,11 +76,6 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             return .push(viewController)
         case .unit2Quizes:
             let viewController = SecondUnitFormViewController.instaintiate(on: .secondUnit)
-            viewController.navigationController?.navigationBar.prefersLargeTitles = true
-            viewController.navigationItem.largeTitleDisplayMode = .always
-            return .push(viewController)
-        case .unit2About:
-            let viewController = SeconUnitAboutViewController.instaintiate(on: .secondUnit)
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
