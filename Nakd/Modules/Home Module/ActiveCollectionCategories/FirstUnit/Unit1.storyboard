@@ -103,29 +103,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0xa-hB-fco">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="bQm-7u-3wM" imageView="43e-FM-hE8" style="IBUITableViewCellStyleDefault" id="zfC-rK-Ebi">
-                                        <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zfC-rK-Ebi" id="z3O-Id-l0o">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bQm-7u-3wM">
-                                                    <rect key="frame" x="57.5" y="0.0" width="296.5" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="video" catalog="system" id="43e-FM-hE8">
-                                                    <rect key="frame" x="18" y="13.5" width="24.5" height="16"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="MCq-Up-cdn" id="VVY-vq-peh"/>
                                     <outlet property="delegate" destination="MCq-Up-cdn" id="yDZ-uV-Tlc"/>
@@ -135,10 +112,10 @@
                         <viewLayoutGuide key="safeArea" id="G8v-Th-RUC"/>
                         <color key="backgroundColor" name="navColor"/>
                         <constraints>
-                            <constraint firstItem="G8v-Th-RUC" firstAttribute="bottom" secondItem="0xa-hB-fco" secondAttribute="bottom" id="Hed-U0-L8H"/>
-                            <constraint firstItem="G8v-Th-RUC" firstAttribute="trailing" secondItem="0xa-hB-fco" secondAttribute="trailing" id="V86-wH-K4T"/>
-                            <constraint firstItem="0xa-hB-fco" firstAttribute="top" secondItem="G8v-Th-RUC" secondAttribute="top" id="f7n-pC-3m0"/>
-                            <constraint firstItem="0xa-hB-fco" firstAttribute="leading" secondItem="G8v-Th-RUC" secondAttribute="leading" id="jNc-hE-WiV"/>
+                            <constraint firstItem="0xa-hB-fco" firstAttribute="top" secondItem="G8v-Th-RUC" secondAttribute="top" id="5su-d0-YWv"/>
+                            <constraint firstItem="0xa-hB-fco" firstAttribute="leading" secondItem="G8v-Th-RUC" secondAttribute="leading" id="HDV-eL-65d"/>
+                            <constraint firstItem="0xa-hB-fco" firstAttribute="bottom" secondItem="G8v-Th-RUC" secondAttribute="bottom" id="NWP-G7-mWD"/>
+                            <constraint firstItem="0xa-hB-fco" firstAttribute="trailing" secondItem="G8v-Th-RUC" secondAttribute="trailing" id="ugU-h4-MeI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -147,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otP-3V-m7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-768" y="59"/>
+            <point key="canvasLocation" x="-833" y="44"/>
         </scene>
         <!--First Unit About View Controller-->
         <scene sceneID="k0g-lY-4jH">
@@ -356,7 +333,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="video" catalog="system" width="128" height="83"/>
         <namedColor name="colorBkGray">
             <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

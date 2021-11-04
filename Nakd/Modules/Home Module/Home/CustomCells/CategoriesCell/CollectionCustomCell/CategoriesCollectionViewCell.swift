@@ -8,9 +8,9 @@ import UIKit
 import Kingfisher
 
 class CategoriesCollectionViewCell: UICollectionViewCell {
-    var model = ["Intro".localized(), "Unit1".localized(), "Unit2".localized()]
-    var desc = ["IntroDesc".localized(), "Unit1Desc".localized(), "Unit2Desc".localized()]
-    var images = ["intro", "unit1", "unit2"]
+    var model = ["Intro".localized(), "Unit1".localized(), "Unit2".localized(), "FinalQuiz".localized()]
+    var desc = ["IntroDesc".localized(), "Unit1Desc".localized(), "Unit2Desc".localized(), "FinalQuizDesc".localized()]
+    var images = ["intro", "unit1", "unit2", "exam"]
     weak var delegate : DetailViewCellDelegate?
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var continueButton: UIButton!

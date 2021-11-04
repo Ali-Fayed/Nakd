@@ -259,6 +259,184 @@
             </objects>
             <point key="canvasLocation" x="1775" y="60"/>
         </scene>
+        <!--Final Quiz View Controller-->
+        <scene sceneID="xBm-6C-wrB">
+            <objects>
+                <viewController storyboardIdentifier="FinalQuizViewController" id="nsN-PC-tyG" customClass="FinalQuizViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yCw-cT-MRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8z3-5I-zsD" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="150" width="414" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfs-2g-1P9" userLabel="ProgressView">
+                                        <rect key="frame" x="0.0" y="50" width="15" height="10"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="E6g-6C-g5r"/>
+                                            <constraint firstAttribute="height" constant="10" id="tGY-Qz-8fh"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AI-N7-kE2">
+                                        <rect key="frame" x="15" y="15" width="60" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="0kv-XJ-JwR"/>
+                                            <constraint firstAttribute="height" constant="25" id="DUi-RS-x6w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gL9-lo-EoI">
+                                        <rect key="frame" x="304" y="15" width="95" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="NNX-1k-dBB"/>
+                                            <constraint firstAttribute="height" constant="25" id="hUy-bV-y4s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="navColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3AI-N7-kE2" secondAttribute="bottom" constant="20" id="ESC-SL-qYS"/>
+                                    <constraint firstItem="3AI-N7-kE2" firstAttribute="leading" secondItem="8z3-5I-zsD" secondAttribute="leading" constant="15" id="KyI-26-faE"/>
+                                    <constraint firstAttribute="height" constant="60" id="OcD-7e-jyg"/>
+                                    <constraint firstAttribute="bottom" secondItem="gL9-lo-EoI" secondAttribute="bottom" constant="20" id="Olf-fV-fOA"/>
+                                    <constraint firstAttribute="trailing" secondItem="gL9-lo-EoI" secondAttribute="trailing" constant="15" id="jaW-Z6-DxK"/>
+                                    <constraint firstItem="Kfs-2g-1P9" firstAttribute="leading" secondItem="8z3-5I-zsD" secondAttribute="leading" id="tAv-9h-0gF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kfs-2g-1P9" secondAttribute="bottom" id="zxO-1L-1z6"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IuB-TA-IOR">
+                                <rect key="frame" x="0.0" y="210" width="414" height="606"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXX-Gh-oPu" userLabel="QuestionView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dmY-vC-OVa" userLabel="Flag">
+                                                <rect key="frame" x="30" y="30" width="354" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="Bl5-pT-HJe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-1N-kid" userLabel="Question">
+                                                <rect key="frame" x="15" y="177.5" width="384" height="118"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="f3b-1N-kid" firstAttribute="leading" secondItem="MXX-Gh-oPu" secondAttribute="leading" constant="15" id="9BP-6g-p6X"/>
+                                            <constraint firstItem="dmY-vC-OVa" firstAttribute="centerX" secondItem="MXX-Gh-oPu" secondAttribute="centerX" id="Fy4-5U-FWk"/>
+                                            <constraint firstItem="f3b-1N-kid" firstAttribute="centerX" secondItem="MXX-Gh-oPu" secondAttribute="centerX" id="QGk-Rd-r49"/>
+                                            <constraint firstAttribute="trailing" secondItem="f3b-1N-kid" secondAttribute="trailing" constant="15" id="Vot-ZU-BZ6"/>
+                                            <constraint firstItem="dmY-vC-OVa" firstAttribute="leading" secondItem="MXX-Gh-oPu" secondAttribute="leading" constant="30" id="aqv-TB-sla"/>
+                                            <constraint firstAttribute="bottom" secondItem="f3b-1N-kid" secondAttribute="bottom" constant="7.5" id="gKn-GO-9Xl"/>
+                                            <constraint firstItem="f3b-1N-kid" firstAttribute="top" secondItem="dmY-vC-OVa" secondAttribute="bottom" constant="7.5" id="k4C-Oz-syf"/>
+                                            <constraint firstItem="dmY-vC-OVa" firstAttribute="top" secondItem="MXX-Gh-oPu" secondAttribute="top" constant="30" id="s3v-8c-rfQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="dmY-vC-OVa" secondAttribute="trailing" constant="30" id="yCF-Js-NQF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c62-6u-aXc" userLabel="ButtonsView">
+                                        <rect key="frame" x="0.0" y="303" width="414" height="303"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yBY-fF-jzG">
+                                                <rect key="frame" x="15" y="7.5" width="384" height="280.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWc-sQ-P4C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="59"/>
+                                                        <color key="backgroundColor" name="navColor"/>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="nsN-PC-tyG" eventType="touchUpInside" id="LFB-5s-8uO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-AZ-HdT">
+                                                        <rect key="frame" x="0.0" y="74" width="384" height="59"/>
+                                                        <color key="backgroundColor" name="navColor"/>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="nsN-PC-tyG" eventType="touchUpInside" id="Bth-IS-ynP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DX-46-W3y">
+                                                        <rect key="frame" x="0.0" y="148" width="384" height="58.5"/>
+                                                        <color key="backgroundColor" name="navColor"/>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="nsN-PC-tyG" eventType="touchUpInside" id="Yul-Ak-9qh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qei-MG-BDT">
+                                                        <rect key="frame" x="0.0" y="221.5" width="384" height="59"/>
+                                                        <color key="backgroundColor" name="navColor"/>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="nsN-PC-tyG" eventType="touchUpInside" id="Ios-mw-Cid"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="yBY-fF-jzG" secondAttribute="bottom" constant="15" id="CRJ-lP-Gz3"/>
+                                            <constraint firstItem="yBY-fF-jzG" firstAttribute="leading" secondItem="c62-6u-aXc" secondAttribute="leading" constant="15" id="Xeh-pP-Rah"/>
+                                            <constraint firstItem="yBY-fF-jzG" firstAttribute="centerX" secondItem="c62-6u-aXc" secondAttribute="centerX" id="h0W-Cb-clW"/>
+                                            <constraint firstItem="yBY-fF-jzG" firstAttribute="top" secondItem="c62-6u-aXc" secondAttribute="top" constant="7.5" id="lrk-OL-FBU"/>
+                                            <constraint firstAttribute="trailing" secondItem="yBY-fF-jzG" secondAttribute="trailing" constant="15" id="rIW-oD-LFB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qIN-fy-2d8"/>
+                        <color key="backgroundColor" name="navColor"/>
+                        <constraints>
+                            <constraint firstItem="8z3-5I-zsD" firstAttribute="trailing" secondItem="qIN-fy-2d8" secondAttribute="trailing" id="090-fJ-mCA"/>
+                            <constraint firstItem="8z3-5I-zsD" firstAttribute="centerX" secondItem="yCw-cT-MRJ" secondAttribute="centerX" id="0f0-jA-2FP"/>
+                            <constraint firstAttribute="trailing" secondItem="IuB-TA-IOR" secondAttribute="trailing" id="4AL-Ae-XxA"/>
+                            <constraint firstItem="8z3-5I-zsD" firstAttribute="leading" secondItem="qIN-fy-2d8" secondAttribute="leading" id="ZiY-2B-wkG"/>
+                            <constraint firstItem="IuB-TA-IOR" firstAttribute="width" secondItem="8z3-5I-zsD" secondAttribute="width" id="cYb-MU-U3Q"/>
+                            <constraint firstItem="8z3-5I-zsD" firstAttribute="top" secondItem="yCw-cT-MRJ" secondAttribute="top" constant="150" id="g23-fS-B56"/>
+                            <constraint firstAttribute="bottom" secondItem="IuB-TA-IOR" secondAttribute="bottom" constant="80" id="kXY-c5-BtM"/>
+                            <constraint firstItem="IuB-TA-IOR" firstAttribute="centerX" secondItem="yCw-cT-MRJ" secondAttribute="centerX" id="nPb-qI-N77"/>
+                            <constraint firstItem="IuB-TA-IOR" firstAttribute="leading" secondItem="yCw-cT-MRJ" secondAttribute="leading" id="ovO-pA-UeX"/>
+                            <constraint firstItem="IuB-TA-IOR" firstAttribute="top" secondItem="8z3-5I-zsD" secondAttribute="bottom" id="xvp-EH-aJq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="l8J-Sy-boB"/>
+                    <connections>
+                        <outlet property="flagView" destination="dmY-vC-OVa" id="4eY-gc-B6u"/>
+                        <outlet property="optionA" destination="FWc-sQ-P4C" id="Ukj-6z-Hje"/>
+                        <outlet property="optionB" destination="Z6T-AZ-HdT" id="rRd-xV-bMh"/>
+                        <outlet property="optionC" destination="7DX-46-W3y" id="La8-Ev-3BH"/>
+                        <outlet property="optionD" destination="qei-MG-BDT" id="vug-Xv-C2a"/>
+                        <outlet property="progressView" destination="Kfs-2g-1P9" id="rR4-d4-nOO"/>
+                        <outlet property="questionCounter" destination="3AI-N7-kE2" id="HUE-CY-Qqb"/>
+                        <outlet property="questionLabel" destination="f3b-1N-kid" id="yji-3F-vfS"/>
+                        <outlet property="scoreLabel" destination="gL9-lo-EoI" id="4RS-pi-5Yd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kx0-XO-OUg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107" y="38"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="colorBkGray">

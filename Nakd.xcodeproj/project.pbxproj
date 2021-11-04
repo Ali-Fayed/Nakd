@@ -55,6 +55,13 @@
 		EAD9F18F27334B9B0086F984 /* fail.json in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F18E27334B9B0086F984 /* fail.json */; };
 		EAD9F196273353880086F984 /* SecondUnitQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F195273353880086F984 /* SecondUnitQuestion.swift */; };
 		EAD9F198273353980086F984 /* SecondUnitQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F197273353980086F984 /* SecondUnitQuestionBank.swift */; };
+		EAD9F19D273359070086F984 /* FirstUnitVideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F19B273359070086F984 /* FirstUnitVideosTableViewCell.swift */; };
+		EAD9F19E273359070086F984 /* FirstUnitVideosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F19C273359070086F984 /* FirstUnitVideosTableViewCell.xib */; };
+		EAD9F1A127335BF50086F984 /* SecondUnitVideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F19F27335BF50086F984 /* SecondUnitVideosTableViewCell.swift */; };
+		EAD9F1A227335BF50086F984 /* SecondUnitVideosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F1A027335BF50086F984 /* SecondUnitVideosTableViewCell.xib */; };
+		EAD9F1A527335D7C0086F984 /* FinalQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F1A427335D7C0086F984 /* FinalQuizViewController.swift */; };
+		EAD9F1A727335DD60086F984 /* FinalQuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F1A627335DD60086F984 /* FinalQuizQuestions.swift */; };
+		EAD9F1A927335DE10086F984 /* FinalQuizQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F1A827335DE10086F984 /* FinalQuizQuestionBank.swift */; };
 		EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477552731431C00D31ABE /* SplashViewController.swift */; };
 		EAF477582731435700D31ABE /* robot.json in Resources */ = {isa = PBXBuildFile; fileRef = EAF477572731435700D31ABE /* robot.json */; };
 		EAF4775C27315D2E00D31ABE /* FirstUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */; };
@@ -164,6 +171,13 @@
 		EAD9F18E27334B9B0086F984 /* fail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail.json; sourceTree = "<group>"; };
 		EAD9F195273353880086F984 /* SecondUnitQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitQuestion.swift; sourceTree = "<group>"; };
 		EAD9F197273353980086F984 /* SecondUnitQuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitQuestionBank.swift; sourceTree = "<group>"; };
+		EAD9F19B273359070086F984 /* FirstUnitVideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitVideosTableViewCell.swift; sourceTree = "<group>"; };
+		EAD9F19C273359070086F984 /* FirstUnitVideosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstUnitVideosTableViewCell.xib; sourceTree = "<group>"; };
+		EAD9F19F27335BF50086F984 /* SecondUnitVideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitVideosTableViewCell.swift; sourceTree = "<group>"; };
+		EAD9F1A027335BF50086F984 /* SecondUnitVideosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondUnitVideosTableViewCell.xib; sourceTree = "<group>"; };
+		EAD9F1A427335D7C0086F984 /* FinalQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalQuizViewController.swift; sourceTree = "<group>"; };
+		EAD9F1A627335DD60086F984 /* FinalQuizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalQuizQuestions.swift; sourceTree = "<group>"; };
+		EAD9F1A827335DE10086F984 /* FinalQuizQuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalQuizQuestionBank.swift; sourceTree = "<group>"; };
 		EAF477552731431C00D31ABE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		EAF477572731435700D31ABE /* robot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = robot.json; sourceTree = "<group>"; };
 		EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitViewController.swift; sourceTree = "<group>"; };
@@ -579,6 +593,32 @@
 			path = Graphs;
 			sourceTree = "<group>";
 		};
+		EAD9F199273357AC0086F984 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EAD9F19A273357B40086F984 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4775F27315D4500D31ABE /* FirstUnitViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAD9F1A327335D650086F984 /* FinalQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				EAD9F1A427335D7C0086F984 /* FinalQuizViewController.swift */,
+				EAD9F1A627335DD60086F984 /* FinalQuizQuestions.swift */,
+				EAD9F1A827335DE10086F984 /* FinalQuizQuestionBank.swift */,
+			);
+			path = FinalQuiz;
+			sourceTree = "<group>";
+		};
 		EAF477542731430000D31ABE /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +644,7 @@
 				EAF477772731855F00D31ABE /* Intro */,
 				EAF47768273178D100D31ABE /* FirstUnit */,
 				EAF47767273178C400D31ABE /* SecondUnit */,
+				EAD9F1A327335D650086F984 /* FinalQuiz */,
 			);
 			path = ActiveCollectionCategories;
 			sourceTree = "<group>";
@@ -679,8 +720,8 @@
 		EAF477922731B04300D31ABE /* Unit1VC */ = {
 			isa = PBXGroup;
 			children = (
-				EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */,
-				EAF4775F27315D4500D31ABE /* FirstUnitViewModel.swift */,
+				EAD9F199273357AC0086F984 /* VC */,
+				EAD9F19A273357B40086F984 /* ViewModel */,
 				EAF47784273194E500D31ABE /* CollectionCell */,
 			);
 			path = Unit1VC;
@@ -720,6 +761,8 @@
 			isa = PBXGroup;
 			children = (
 				EAF477952731B07A00D31ABE /* FirstUnitVideosViewController.swift */,
+				EAD9F19B273359070086F984 /* FirstUnitVideosTableViewCell.swift */,
+				EAD9F19C273359070086F984 /* FirstUnitVideosTableViewCell.xib */,
 			);
 			path = Viedos;
 			sourceTree = "<group>";
@@ -728,6 +771,8 @@
 			isa = PBXGroup;
 			children = (
 				EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */,
+				EAD9F19F27335BF50086F984 /* SecondUnitVideosTableViewCell.swift */,
+				EAD9F1A027335BF50086F984 /* SecondUnitVideosTableViewCell.xib */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -855,6 +900,7 @@
 				EAF477892731A98500D31ABE /* MoreCollectionsViewCell.xib in Resources */,
 				EAF4777F2731934900D31ABE /* FirstUnitCollectionViewCell.xib in Resources */,
 				EAD5540F273096F400F5F26B /* CategoriesCollectionViewCell.xib in Resources */,
+				EAD9F1A227335BF50086F984 /* SecondUnitVideosTableViewCell.xib in Resources */,
 				EAD06A112730998500AFBE93 /* OthersCollectionViewCell.xib in Resources */,
 				EAD554022730952A00F5F26B /* CategoriesTableViewCollectionCell.xib in Resources */,
 				EAF477762731798B00D31ABE /* Unit2.storyboard in Resources */,
@@ -864,6 +910,7 @@
 				EAC3A00C27302C850038CB85 /* Tajawal-ExtraLight.ttf in Resources */,
 				EAC3A00D27302C850038CB85 /* Tajawal-Light.ttf in Resources */,
 				EA7DE4AE273010C500FB0C8B /* Main.storyboard in Resources */,
+				EAD9F19E273359070086F984 /* FirstUnitVideosTableViewCell.xib in Resources */,
 				EAF4777B2731857200D31ABE /* Intro.storyboard in Resources */,
 				EAD9F18F27334B9B0086F984 /* fail.json in Resources */,
 			);
@@ -1000,9 +1047,11 @@
 				EAF4779B2731B0DC00D31ABE /* GoalsViewController.swift in Sources */,
 				EAC3A02527303DFC0038CB85 /* AppCordinator.swift in Sources */,
 				EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */,
+				EAD9F1A127335BF50086F984 /* SecondUnitVideosTableViewCell.swift in Sources */,
 				EA7DE4E5273011E600FB0C8B /* Localizable.swift in Sources */,
 				EAF477792731856B00D31ABE /* IntroViewController.swift in Sources */,
 				EA7DE4A9273010C500FB0C8B /* SceneDelegate.swift in Sources */,
+				EAD9F19D273359070086F984 /* FirstUnitVideosTableViewCell.swift in Sources */,
 				EAC3A02127303D160038CB85 /* MoreViewModel.swift in Sources */,
 				EA7DE4E82730131F00FB0C8B /* Fonts.swift in Sources */,
 				EAC3A01827303BCB0038CB85 /* TabBarCordinator.swift in Sources */,
@@ -1012,6 +1061,7 @@
 				EA7DE4B1273010C500FB0C8B /* Nakd.xcdatamodeld in Sources */,
 				EAD9F198273353980086F984 /* SecondUnitQuestionBank.swift in Sources */,
 				EAD9F1542732EC220086F984 /* FirstUnitQuestionBank.swift in Sources */,
+				EAD9F1A927335DE10086F984 /* FinalQuizQuestionBank.swift in Sources */,
 				EAF4775C27315D2E00D31ABE /* FirstUnitViewController.swift in Sources */,
 				EAF477982731B08E00D31ABE /* FirstUnitAboutViewController.swift in Sources */,
 				EAD06A1427309A1900AFBE93 /* OthersTableViewCollectionCell.swift in Sources */,
@@ -1021,12 +1071,14 @@
 				EAF477962731B07A00D31ABE /* FirstUnitVideosViewController.swift in Sources */,
 				EAF4776027315D4500D31ABE /* FirstUnitViewModel.swift in Sources */,
 				EAF4776A273178F200D31ABE /* SecondUnitViewController.swift in Sources */,
+				EAD9F1A727335DD60086F984 /* FinalQuizQuestions.swift in Sources */,
 				EAF4776C2731790900D31ABE /* SecondUnitViewModel.swift in Sources */,
 				EAF477A12731B10600D31ABE /* WhoUsViewController.swift in Sources */,
 				EAD9F196273353880086F984 /* SecondUnitQuestion.swift in Sources */,
 				EAF477A52732093000D31ABE /* Protocols.swift in Sources */,
 				EAC3A0162730387A0038CB85 /* Constants.swift in Sources */,
 				EAF477822731947500D31ABE /* SecondUnitCollectionViewCell.swift in Sources */,
+				EAD9F1A527335D7C0086F984 /* FinalQuizViewController.swift in Sources */,
 				EAD5540E273096F400F5F26B /* CategoriesCollectionViewCell.swift in Sources */,
 				EAF477702731792300D31ABE /* SecondUnitFormViewController.swift in Sources */,
 				EAF4779D2731B0E700D31ABE /* WhyUsViewController.swift in Sources */,

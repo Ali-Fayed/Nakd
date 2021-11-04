@@ -23,7 +23,7 @@ class FirstUnitViewController: UIViewController {
 //MARK: - CollectionView
 extension FirstUnitViewController: UICollectionViewDelegate, UICollectionViewDataSource {
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 3
      }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstUnitCollectionViewCell", for: indexPath) as! FirstUnitCollectionViewCell
@@ -38,8 +38,6 @@ extension FirstUnitViewController: UICollectionViewDelegate, UICollectionViewDat
             viewModel.router?.trigger(.unit1Graphs)
         } else if indexPath.row == 2 {
             viewModel.router?.trigger(.unit1Quizes)
-        } else if indexPath.row == 3 {
-            viewModel.router?.trigger(.unit1About)
         }
     }
  }
@@ -56,8 +54,6 @@ extension FirstUnitViewController: FirstUnitDelegate {
             viewModel.router?.trigger(.unit1Graphs)
         } else if cell.lblCategoryName.text ==  "EducationQuizes".localized() {
             viewModel.router?.trigger(.unit1Quizes)
-        } else if cell.lblCategoryName.text ==  "AboutUs".localized() {
-            viewModel.router?.trigger(.unit1About)
-        }
+        } 
     }
 }

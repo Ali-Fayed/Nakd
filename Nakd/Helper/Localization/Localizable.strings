@@ -31,3 +31,7 @@
 "Awesome" = "رائع !";
 "End of Quiz. Do you want to start over?" = "نهايه الاسأله .. هل تريد اعاده البدء من اول سؤال ؟";
 "Restart" = "اعاده الاسأله";
+"firstVideo" = "الڤيديو الاول";
+"secondVideo" = "الڤيديو الثاني";
+"FinalQuizDesc" = "الاختبار الذي يقيس مدي فهمك للوحدتين";
+"FinalQuiz" = "الاختبار النهائي";

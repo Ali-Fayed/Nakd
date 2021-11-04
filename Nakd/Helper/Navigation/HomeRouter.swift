@@ -22,6 +22,7 @@ enum HomeRoute: Route {
     case unit2Graphs
     case unit2Quizes
     case unit2About
+    case finalQuiz
 }
 class HomeCoordinator: NavigationCoordinator<HomeRoute> {
     init() {
@@ -90,7 +91,11 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
-
+        case .finalQuiz:
+            let viewController = FinalQuizViewController.instaintiate(on: .mainView)
+            viewController.navigationController?.navigationBar.prefersLargeTitles = true
+            viewController.navigationItem.largeTitleDisplayMode = .always
+            return .push(viewController)
         }
     }
 }

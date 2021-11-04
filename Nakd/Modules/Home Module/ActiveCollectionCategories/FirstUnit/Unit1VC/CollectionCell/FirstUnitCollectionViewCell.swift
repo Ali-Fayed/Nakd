@@ -9,9 +9,9 @@ import UIKit
 import Kingfisher
 
 class FirstUnitCollectionViewCell: UICollectionViewCell {
-    var model = ["EducationVideos".localized(), "EducationGraphs".localized(), "EducationQuizes".localized(), "AboutUs".localized()]
-    var desc = ["EducationVideosDesc".localized(), "EducationGraphsDesc".localized(), "EducationQuizesDesc".localized(), "AboutUsDesc".localized()]
-    var images = ["videos", "graphs", "quiz", "why"]
+    var model = ["EducationVideos".localized(), "EducationGraphs".localized(), "EducationQuizes".localized()]
+    var desc = ["EducationVideosDesc".localized(), "EducationGraphsDesc".localized(), "EducationQuizesDesc".localized()]
+    var images = ["videos", "graphs", "quiz"]
     weak var delegate: FirstUnitDelegate?
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var continueButton: UIButton!

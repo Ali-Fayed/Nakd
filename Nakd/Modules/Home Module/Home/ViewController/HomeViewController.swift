@@ -174,6 +174,8 @@ extension HomeViewController: HomeViewCellDelegate {
             viewModel.router?.trigger(.unit1)
         } else if cell.lblCategoryName.text ==  "Unit2".localized() {
             viewModel.router?.trigger(.unit2)
+        } else if cell.lblCategoryName.text ==  "FinalQuiz".localized() {
+            viewModel.router?.trigger(.finalQuiz)
         }
     }
 }
