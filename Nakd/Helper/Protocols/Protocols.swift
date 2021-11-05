@@ -18,3 +18,6 @@ protocol FirstUnitDelegate: AnyObject {
 protocol SecondUnitDelegate: AnyObject {
     func didTapButton(cell: SecondUnitCollectionViewCell, didTappedThe button:UIButton?)
 }
+protocol MoreDelegate: AnyObject {
+    func didTapButton(cell: MoreCollectionsViewCell, didTappedThe button:UIButton?)
+}

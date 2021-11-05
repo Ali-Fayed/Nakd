@@ -437,6 +437,38 @@
             </objects>
             <point key="canvasLocation" x="-107" y="38"/>
         </scene>
+        <!--More Detail View Controller-->
+        <scene sceneID="BOj-qG-Tge">
+            <objects>
+                <viewController storyboardIdentifier="MoreDetailViewController" id="wky-0l-4uP" customClass="MoreDetailViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qwX-8H-vvl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نحن تطبيق ناقد تطبيق تعليمي خدمي يهدف الي تعليم اللغه العربيه" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug3-Na-lbK">
+                                <rect key="frame" x="0.0" y="244" width="414" height="379"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nTM-c7-hmO"/>
+                        <color key="backgroundColor" name="navColor"/>
+                        <constraints>
+                            <constraint firstItem="Ug3-Na-lbK" firstAttribute="top" secondItem="nTM-c7-hmO" secondAttribute="top" constant="200" id="8w2-qI-mgy"/>
+                            <constraint firstItem="nTM-c7-hmO" firstAttribute="bottom" secondItem="Ug3-Na-lbK" secondAttribute="bottom" constant="239" id="Heo-dJ-Jw6"/>
+                            <constraint firstItem="Ug3-Na-lbK" firstAttribute="trailing" secondItem="nTM-c7-hmO" secondAttribute="trailing" id="J2o-Qi-qNg"/>
+                            <constraint firstItem="Ug3-Na-lbK" firstAttribute="leading" secondItem="nTM-c7-hmO" secondAttribute="leading" id="nj1-8z-5Qr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="Ug3-Na-lbK" id="9it-au-gUx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RjQ-Ee-fdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-777" y="21"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="colorBkGray">

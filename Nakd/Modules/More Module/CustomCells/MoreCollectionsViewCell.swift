@@ -11,6 +11,7 @@ import Kingfisher
 class MoreCollectionsViewCell: UICollectionViewCell {
     var model = ["Goals".localized(), "WhyUs?".localized(), "WhoUs?".localized(), "Contact".localized()]
     var images = ["goals", "whyUs?", "people", "why"]
+    weak var delegate: MoreDelegate?
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var catContentView: UIView!
@@ -21,6 +22,9 @@ class MoreCollectionsViewCell: UICollectionViewCell {
         continueButton.layer.cornerRadius = 10
         descriptionTitle.isHidden = true
         catContentView.layer.cornerRadius = 10
+    }
+    @IBAction func pressMoreButton(_ sender: Any) {
+        delegate?.didTapButton(cell: self, didTappedThe: sender as! UIButton)
     }
     func setData(indexPath: IndexPath) {
         lblCategoryName.text = model[indexPath.row]

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import XCoordinator
 
 class MoreViewController: UIViewController {
     var viewModel = MoreViewModel()
@@ -21,7 +22,6 @@ class MoreViewController: UIViewController {
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         collectionView.register( UINib(nibName: "MoreCollectionsViewCell", bundle: nil), forCellWithReuseIdentifier: "MoreCollectionsViewCell")
     }
-
 }
 //MARK: - CollectionView
 extension MoreViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -31,14 +31,29 @@ extension MoreViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoreCollectionsViewCell", for: indexPath) as! MoreCollectionsViewCell
         cell.setData(indexPath: indexPath)
+        cell.delegate = self
         return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-      
     }
  }
 extension MoreViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 200, height: 300)
     }
+}
+extension MoreViewController: MoreDelegate {
+    func didTapButton(cell: MoreCollectionsViewCell, didTappedThe button: UIButton?) {
+        guard let indexPath = collectionView.indexPath(for: cell) else {
+            return
+        }
+        if indexPath.row == 0 {
+            viewModel.router?.trigger(.moreDetails(text: "GoalsDescr".localized()))
+        } else if indexPath.row == 1 {
+            viewModel.router?.trigger(.moreDetails(text: "WhyUsDescr".localized()))
+        } else if indexPath.row == 2 {
+            viewModel.router?.trigger(.moreDetails(text: "WhoUsDescr".localized()))
+        } else if indexPath.row == 3 {
+            viewModel.router?.trigger(.moreDetails(text: "ContactUsDescr".localized()))
+        }
+    }
+    
 }
