@@ -14,8 +14,8 @@ class FirstUnitFormViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     let animationView = AnimationView()
     let label = UILabel()
-    static let successAnimation = "fail"
-    static let failAnimation = "success"
+    static let successAnimation = "success"
+    static let failAnimation = "failure"
     //Outlet for Buttons
     @IBOutlet weak var optionA: UIButton!
     @IBOutlet weak var optionB: UIButton!

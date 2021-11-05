@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 import SafariServices
 
 class FirstUnitVideosViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var data = ["firstVideo".localized(), "secondVideo".localized()]
-    var videosURL = ["https://www.youtube.com/watch?v=53bBL709is4", "https://www.youtube.com/watch?v=4XEmggryer0"]
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "EducationVideos".localized()
@@ -31,8 +32,29 @@ extension FirstUnitVideosViewController: UITableViewDataSource, UITableViewDeleg
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let safariVC = SFSafariViewController(url: URL(string: videosURL[indexPath.row])!)
-        self.present(safariVC, animated: true, completion: nil)
+        if indexPath.row == 0 {
+            guard let path = Bundle.main.path(forResource: "FirstUnitVideo1", ofType:"m4v") else {
+                debugPrint("FirstUnitVideo1.m4v not found")
+                return
+            }
+            let player = AVPlayer(url: URL(fileURLWithPath: path))
+            let playerController = AVPlayerViewController()
+            playerController.player = player
+            present(playerController, animated: true) {
+                player.play()
+            }
+        } else if indexPath.row == 1 {
+            guard let path = Bundle.main.path(forResource: "FirstUnitVideo2", ofType:"m4v") else {
+                debugPrint("FirstUnitVideo1.m4v not found")
+                return
+            }
+            let player = AVPlayer(url: URL(fileURLWithPath: path))
+            let playerController = AVPlayerViewController()
+            playerController.player = player
+            present(playerController, animated: true) {
+                player.play()
+            }
+        }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         75

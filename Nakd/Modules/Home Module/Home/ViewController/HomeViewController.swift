@@ -20,7 +20,6 @@ class HomeViewController: UIViewController, AVPlayerViewControllerDelegate {
     ]
     weak var delegate: HomeViewCellDelegate?
     lazy var viewModel = HomeViewModel()
-    var playerController = AVPlayerViewController()
     var timer = Timer()
     var counter = 0
     //MARK: - LifeCycle
@@ -139,14 +138,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        guard let url = URL(string: Links.videoLink) else {return}
-        let player = AVPlayer(url: url)
-        playerController = AVPlayerViewController()
+        guard let path = Bundle.main.path(forResource: "FirstUnitVideo1", ofType:"m4v") else {
+            debugPrint("FirstUnitVideo1.m4v not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
         playerController.player = player
-        playerController.allowsPictureInPicturePlayback = true
-        playerController.delegate = self
-        playerController.player?.play()
-        self.present(playerController, animated: true, completion: nil)
+        present(playerController, animated: true) {
+            player.play()
+        }
     }
 }
 //MARK: - CollectionView Layout
