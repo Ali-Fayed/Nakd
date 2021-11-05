@@ -1,0 +1,6 @@
+framework module Pods_Nakd {
+  umbrella header "Pods-Nakd-umbrella.h"
+
+  export *
+  module * { export * }
+}

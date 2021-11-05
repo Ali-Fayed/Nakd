@@ -1,0 +1,6 @@
+framework module Pods_Nakd_NakdUITests {
+  umbrella header "Pods-Nakd-NakdUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
