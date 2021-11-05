@@ -11,6 +11,7 @@
 		C4A55BCA8278A6A9B1050240 /* Pods_Nakd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD8CF60B9FC99D210BD9FC1 /* Pods_Nakd.framework */; };
 		CC76C86A98F0D3E767F31CC5 /* Pods_Nakd_NakdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69971B200D394E282652FC2F /* Pods_Nakd_NakdUITests.framework */; };
 		EA67D1832734C53900823AC5 /* MoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67D1822734C53900823AC5 /* MoreDetailViewController.swift */; };
+		EA67D1862734CA2B00823AC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67D1852734CA2B00823AC5 /* LoginViewController.swift */; };
 		EA7DE4A7273010C500FB0C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4A6273010C500FB0C8B /* AppDelegate.swift */; };
 		EA7DE4A9273010C500FB0C8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4A8273010C500FB0C8B /* SceneDelegate.swift */; };
 		EA7DE4AB273010C500FB0C8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DE4AA273010C500FB0C8B /* HomeViewController.swift */; };
@@ -129,6 +130,7 @@
 		C0A0710E9EAFB41DAE772A98 /* Pods-Nakd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nakd.debug.xcconfig"; path = "Target Support Files/Pods-Nakd/Pods-Nakd.debug.xcconfig"; sourceTree = "<group>"; };
 		CD1372BD917C57430E0D707B /* Pods-NakdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NakdTests.release.xcconfig"; path = "Target Support Files/Pods-NakdTests/Pods-NakdTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA67D1822734C53900823AC5 /* MoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailViewController.swift; sourceTree = "<group>"; };
+		EA67D1852734CA2B00823AC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA7DE4A3273010C500FB0C8B /* Nakd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nakd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7DE4A6273010C500FB0C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7DE4A8273010C500FB0C8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -276,6 +278,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA67D1842734CA1400823AC5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EA67D1852734CA2B00823AC5 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		EA7DE49A273010C500FB0C8B = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +371,7 @@
 		EA7DE4DC2730110500FB0C8B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EA67D1842734CA1400823AC5 /* Authentication */,
 				EAF477542731430000D31ABE /* SplashScreen */,
 				EAC3A02A273041B40038CB85 /* TabBar */,
 				EAC3A0142730386E0038CB85 /* Home Module */,
@@ -1143,6 +1154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA67D1862734CA2B00823AC5 /* LoginViewController.swift in Sources */,
 				EA7DE4AB273010C500FB0C8B /* HomeViewController.swift in Sources */,
 				EAD9F1C52734BFCF0086F984 /* FirstUnitImageViewController.swift in Sources */,
 				EAC3A01F27303C6F0038CB85 /* MoreViewController.swift in Sources */,

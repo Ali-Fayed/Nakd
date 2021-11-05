@@ -35,7 +35,7 @@ class SplashViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 UIView.animate(withDuration: 1.0) {
                     self.animationView.alpha = 0
-                    self.router?.trigger(.home)
+                    self.router?.trigger(.login)
                 }
             }
         }

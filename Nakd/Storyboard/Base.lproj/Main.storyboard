@@ -259,6 +259,79 @@
             </objects>
             <point key="canvasLocation" x="1775" y="60"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="zLT-HV-Iv7">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="kPe-Zt-SbV" customClass="LoginViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A8J-2G-bYr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="EM2-5f-T16">
+                                <rect key="frame" x="57" y="195" width="300" height="333"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا بك في ناقد " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CG-fw-rS0">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="23"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم المستخدم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zs-vc-QXf">
+                                        <rect key="frame" x="0.0" y="78" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="B7q-co-KdD"/>
+                                            <constraint firstAttribute="width" constant="300" id="Qxw-Wk-Oqy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمه السر" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L13-Sp-jgG">
+                                        <rect key="frame" x="0.0" y="183" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Tac-px-OPl"/>
+                                            <constraint firstAttribute="width" constant="300" id="pup-C9-GCV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2P-MU-QzB">
+                                        <rect key="frame" x="0.0" y="288" width="300" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Uic-ja-pkU"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="تسجيل دخول">
+                                            <fontDescription key="titleFontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapButton:" destination="kPe-Zt-SbV" eventType="touchUpInside" id="WoG-N9-6Iu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A7H-Ob-2Pi"/>
+                        <color key="backgroundColor" name="navColor"/>
+                        <constraints>
+                            <constraint firstItem="EM2-5f-T16" firstAttribute="top" secondItem="A7H-Ob-2Pi" secondAttribute="top" constant="151" id="2qk-lF-R4V"/>
+                            <constraint firstItem="EM2-5f-T16" firstAttribute="leading" secondItem="A7H-Ob-2Pi" secondAttribute="leading" constant="57" id="Bs6-J7-t5l"/>
+                            <constraint firstItem="A7H-Ob-2Pi" firstAttribute="bottom" secondItem="EM2-5f-T16" secondAttribute="bottom" constant="334" id="cBq-7y-aO8"/>
+                            <constraint firstItem="A7H-Ob-2Pi" firstAttribute="trailing" secondItem="EM2-5f-T16" secondAttribute="trailing" constant="57" id="pkN-kt-cFH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordLabel" destination="L13-Sp-jgG" id="p6S-s0-i23"/>
+                        <outlet property="signInButton" destination="R2P-MU-QzB" id="H82-5N-UqD"/>
+                        <outlet property="userNameText" destination="5Zs-vc-QXf" id="WaQ-ie-oPB"/>
+                        <outlet property="welcomeLabel" destination="2CG-fw-rS0" id="xrz-Ct-wNf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9Y-jV-d4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640.579710144928" y="59.598214285714285"/>
+        </scene>
         <!--Final Quiz View Controller-->
         <scene sceneID="xBm-6C-wrB">
             <objects>

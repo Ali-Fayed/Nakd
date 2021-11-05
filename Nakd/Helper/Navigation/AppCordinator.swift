@@ -12,6 +12,7 @@ import XCoordinator
 enum AppRoute: Route {
     case splash
     case home
+    case login
 }
 
 class AppCoordinator: NavigationCoordinator<AppRoute> {
@@ -27,6 +28,10 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
             splashVC.router = strongRouter
             splashVC.modalPresentationStyle = .fullScreen
             return .push(splashVC)
+        case .login:
+            let viewController = LoginViewController.instaintiate(on: .mainView)
+            viewController.router = strongRouter
+            return .push(viewController)
         case .home:
             let tabCoordinator = HomeTabBarCoordinator()
             tabCoordinator.rootViewController.navigationController?.navigationBar.prefersLargeTitles = true
