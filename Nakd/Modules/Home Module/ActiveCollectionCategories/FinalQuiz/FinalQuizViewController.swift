@@ -23,7 +23,7 @@ class FinalQuizViewController: UIViewController {
     @IBOutlet weak var optionC: UIButton!
     @IBOutlet weak var optionD: UIButton!
     
-    let allQuestions = FirstUnitQuestionBank()
+    let allQuestions = FinalQuizQuestionBank()
     var questionNumber: Int = 0
     var score: Int = 0
     var selectedAnswer: Int = 0
@@ -32,6 +32,7 @@ class FinalQuizViewController: UIViewController {
         super.viewDidLoad()
         updateQuestion()
         updateUI()
+        optionD.isHidden = true
         title = "FinalQuiz".localized()
     }
     @IBAction func answerPressed(_ sender: UIButton) {
@@ -72,7 +73,6 @@ class FinalQuizViewController: UIViewController {
             optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControl.State.normal)
             optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControl.State.normal)
             optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControl.State.normal)
-            optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControl.State.normal)
             selectedAnswer = allQuestions.list[questionNumber].correctAnswer
             updateUI()
         } else {
@@ -84,6 +84,7 @@ class FinalQuizViewController: UIViewController {
             alert.addAction(restartAction)
             alert.addAction(backAction)
             present(alert, animated: true, completion: nil)
+            startAnimation(animation: FirstUnitFormViewController.successAnimation)
         }
     }
     func updateUI(){
@@ -94,10 +95,6 @@ class FinalQuizViewController: UIViewController {
         scoreLabel.text = "Score: ".localized() + "\(score)"
         questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
         progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
-        if questionNumber == 9 {
-            optionC.isHidden = true
-            optionD.isHidden = true
-        }
     }
     
     func restartQuiz(){

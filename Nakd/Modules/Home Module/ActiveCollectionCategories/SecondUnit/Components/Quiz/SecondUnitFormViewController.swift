@@ -84,6 +84,7 @@ class SecondUnitFormViewController: UIViewController {
             alert.addAction(restartAction)
             alert.addAction(backAction)
             present(alert, animated: true, completion: nil)
+            startAnimation(animation: FirstUnitFormViewController.successAnimation)
         }
     }
     func updateUI(){
@@ -94,10 +95,6 @@ class SecondUnitFormViewController: UIViewController {
         scoreLabel.text = "Score: ".localized() + "\(score)"
         questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
         progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
-        if questionNumber == 9 {
-            optionC.isHidden = true
-            optionD.isHidden = true
-        }
     }
     
     func restartQuiz(){
