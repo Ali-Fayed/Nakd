@@ -66,6 +66,11 @@
 		EAD9F1B12734B8360086F984 /* FirstUnitVideo2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F1AF2734B79D0086F984 /* FirstUnitVideo2.m4v */; };
 		EAD9F1B62734BA870086F984 /* SecondUnitVideo1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F1B52734BA1E0086F984 /* SecondUnitVideo1.m4v */; };
 		EAD9F1B72734BA870086F984 /* SecondUnitVideo2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F1B42734BA1D0086F984 /* SecondUnitVideo2.m4v */; };
+		EAD9F1BF2734BE740086F984 /* FirstUnitGraph1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F1BD2734BE740086F984 /* FirstUnitGraph1.jpeg */; };
+		EAD9F1C02734BE740086F984 /* SecondUnitGraph2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F1BE2734BE740086F984 /* SecondUnitGraph2.jpeg */; };
+		EAD9F1C32734BEFA0086F984 /* Unit2Graph1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EAD9F1C22734BEFA0086F984 /* Unit2Graph1.jpeg */; };
+		EAD9F1C52734BFCF0086F984 /* FirstUnitImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F1C42734BFCF0086F984 /* FirstUnitImageViewController.swift */; };
+		EAD9F1C82734C2440086F984 /* SecondUnitImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9F1C72734C2440086F984 /* SecondUnitImageViewController.swift */; };
 		EAF477562731431C00D31ABE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF477552731431C00D31ABE /* SplashViewController.swift */; };
 		EAF477582731435700D31ABE /* robot.json in Resources */ = {isa = PBXBuildFile; fileRef = EAF477572731435700D31ABE /* robot.json */; };
 		EAF4775C27315D2E00D31ABE /* FirstUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */; };
@@ -184,6 +189,11 @@
 		EAD9F1AF2734B79D0086F984 /* FirstUnitVideo2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = FirstUnitVideo2.m4v; sourceTree = "<group>"; };
 		EAD9F1B42734BA1D0086F984 /* SecondUnitVideo2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = SecondUnitVideo2.m4v; sourceTree = "<group>"; };
 		EAD9F1B52734BA1E0086F984 /* SecondUnitVideo1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = SecondUnitVideo1.m4v; sourceTree = "<group>"; };
+		EAD9F1BD2734BE740086F984 /* FirstUnitGraph1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FirstUnitGraph1.jpeg; sourceTree = "<group>"; };
+		EAD9F1BE2734BE740086F984 /* SecondUnitGraph2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SecondUnitGraph2.jpeg; sourceTree = "<group>"; };
+		EAD9F1C22734BEFA0086F984 /* Unit2Graph1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unit2Graph1.jpeg; sourceTree = "<group>"; };
+		EAD9F1C42734BFCF0086F984 /* FirstUnitImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitImageViewController.swift; sourceTree = "<group>"; };
+		EAD9F1C72734C2440086F984 /* SecondUnitImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUnitImageViewController.swift; sourceTree = "<group>"; };
 		EAF477552731431C00D31ABE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		EAF477572731435700D31ABE /* robot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = robot.json; sourceTree = "<group>"; };
 		EAF4775B27315D2E00D31ABE /* FirstUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUnitViewController.swift; sourceTree = "<group>"; };
@@ -417,7 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				EAF4775927315D0400D31ABE /* Home */,
-				EAF4775A27315D0C00D31ABE /* ActiveCollectionCategories */,
+				EAF4775A27315D0C00D31ABE /* Categories */,
 			);
 			path = "Home Module";
 			sourceTree = "<group>";
@@ -568,7 +578,9 @@
 		EAD9F191273353570086F984 /* Graphs */ = {
 			isa = PBXGroup;
 			children = (
+				EAD9F1C12734BE920086F984 /* GraphsImages */,
 				EAF4778B2731AFC100D31ABE /* SecondUnitGraphsViewController.swift */,
+				EAD9F1C72734C2440086F984 /* SecondUnitImageViewController.swift */,
 			);
 			path = Graphs;
 			sourceTree = "<group>";
@@ -576,7 +588,9 @@
 		EAD9F194273353700086F984 /* Graphs */ = {
 			isa = PBXGroup;
 			children = (
+				EAD9F1C62734C0330086F984 /* Unit2Images */,
 				EAF477932731B05F00D31ABE /* FirstUnitGraphsViewController.swift */,
+				EAD9F1C42734BFCF0086F984 /* FirstUnitImageViewController.swift */,
 			);
 			path = Graphs;
 			sourceTree = "<group>";
@@ -634,13 +648,72 @@
 			path = Unit1Videos;
 			sourceTree = "<group>";
 		};
-		EAD9F1B32734BA010086F984 /* Videos */ = {
+		EAD9F1B32734BA010086F984 /* Unit2Videos */ = {
 			isa = PBXGroup;
 			children = (
 				EAD9F1B52734BA1E0086F984 /* SecondUnitVideo1.m4v */,
 				EAD9F1B42734BA1D0086F984 /* SecondUnitVideo2.m4v */,
 			);
-			path = Videos;
+			path = Unit2Videos;
+			sourceTree = "<group>";
+		};
+		EAD9F1B82734BAFF0086F984 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4776B2731790900D31ABE /* SecondUnitViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAD9F1B92734BB080086F984 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAF47785273194F200D31ABE /* CollectionCell */,
+				EAF47769273178F200D31ABE /* SecondUnitViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EAD9F1BA2734BB120086F984 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EAF477752731798B00D31ABE /* Unit2.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EAD9F1BB2734BB380086F984 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAD9F19F27335BF50086F984 /* SecondUnitVideosTableViewCell.swift */,
+				EAD9F1A027335BF50086F984 /* SecondUnitVideosTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		EAD9F1BC2734BB420086F984 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EAD9F1C12734BE920086F984 /* GraphsImages */ = {
+			isa = PBXGroup;
+			children = (
+				EAD9F1BD2734BE740086F984 /* FirstUnitGraph1.jpeg */,
+				EAD9F1BE2734BE740086F984 /* SecondUnitGraph2.jpeg */,
+			);
+			path = GraphsImages;
+			sourceTree = "<group>";
+		};
+		EAD9F1C62734C0330086F984 /* Unit2Images */ = {
+			isa = PBXGroup;
+			children = (
+				EAD9F1C22734BEFA0086F984 /* Unit2Graph1.jpeg */,
+			);
+			path = Unit2Images;
 			sourceTree = "<group>";
 		};
 		EAF477542731430000D31ABE /* SplashScreen */ = {
@@ -662,7 +735,7 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		EAF4775A27315D0C00D31ABE /* ActiveCollectionCategories */ = {
+		EAF4775A27315D0C00D31ABE /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				EAF477772731855F00D31ABE /* Intro */,
@@ -670,14 +743,14 @@
 				EAF47767273178C400D31ABE /* SecondUnit */,
 				EAD9F1A327335D650086F984 /* FinalQuiz */,
 			);
-			path = ActiveCollectionCategories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		EAF47767273178C400D31ABE /* SecondUnit */ = {
 			isa = PBXGroup;
 			children = (
-				EAF477752731798B00D31ABE /* Unit2.storyboard */,
-				EAF4778A2731AF8F00D31ABE /* Unit2VC */,
+				EAD9F1BA2734BB120086F984 /* Storyboard */,
+				EAF4778A2731AF8F00D31ABE /* ViewController */,
 				EAF477912731B00700D31ABE /* Components */,
 			);
 			path = SecondUnit;
@@ -687,7 +760,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD9F1AA2734B5B90086F984 /* Storyboard */,
-				EAF477922731B04300D31ABE /* Unit1VC */,
+				EAF477922731B04300D31ABE /* ViewController */,
 				EAF477992731B09300D31ABE /* Components */,
 			);
 			path = FirstUnit;
@@ -720,14 +793,13 @@
 			path = CollectionCell;
 			sourceTree = "<group>";
 		};
-		EAF4778A2731AF8F00D31ABE /* Unit2VC */ = {
+		EAF4778A2731AF8F00D31ABE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EAF47769273178F200D31ABE /* SecondUnitViewController.swift */,
-				EAF4776B2731790900D31ABE /* SecondUnitViewModel.swift */,
-				EAF47785273194F200D31ABE /* CollectionCell */,
+				EAD9F1B92734BB080086F984 /* ViewController */,
+				EAD9F1B82734BAFF0086F984 /* ViewModel */,
 			);
-			path = Unit2VC;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		EAF477912731B00700D31ABE /* Components */ = {
@@ -740,21 +812,21 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		EAF477922731B04300D31ABE /* Unit1VC */ = {
+		EAF477922731B04300D31ABE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				EAD9F199273357AC0086F984 /* ViewController */,
 				EAD9F19A273357B40086F984 /* ViewModel */,
 			);
-			path = Unit1VC;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		EAF477992731B09300D31ABE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				EAD9F1502732EC050086F984 /* Quiz */,
 				EAD9F194273353700086F984 /* Graphs */,
 				EAF477A62732099400D31ABE /* Viedos */,
+				EAD9F1502732EC050086F984 /* Quiz */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -791,10 +863,9 @@
 		EAF477A727320BA900D31ABE /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				EAD9F1B32734BA010086F984 /* Videos */,
-				EAF4778F2731AFFA00D31ABE /* SecondUnitVideosViewController.swift */,
-				EAD9F19F27335BF50086F984 /* SecondUnitVideosTableViewCell.swift */,
-				EAD9F1A027335BF50086F984 /* SecondUnitVideosTableViewCell.xib */,
+				EAD9F1B32734BA010086F984 /* Unit2Videos */,
+				EAD9F1BC2734BB420086F984 /* ViewController */,
+				EAD9F1BB2734BB380086F984 /* TableViewCell */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -918,6 +989,7 @@
 				EAF477832731947500D31ABE /* SecondUnitCollectionViewCell.xib in Resources */,
 				EAD9F18D27334B930086F984 /* failure.json in Resources */,
 				EAF477582731435700D31ABE /* robot.json in Resources */,
+				EAD9F1BF2734BE740086F984 /* FirstUnitGraph1.jpeg in Resources */,
 				EAC3A00A27302C850038CB85 /* Tajawal-Regular.ttf in Resources */,
 				EA7DE4E32730117900FB0C8B /* Localizable.strings in Resources */,
 				EAC3A01027302C850038CB85 /* Tajawal-Black.ttf in Resources */,
@@ -932,12 +1004,14 @@
 				EAF477762731798B00D31ABE /* Unit2.storyboard in Resources */,
 				EAC3A00E27302C850038CB85 /* Tajawal-Medium.ttf in Resources */,
 				EAF4776627315DCD00D31ABE /* Unit1.storyboard in Resources */,
+				EAD9F1C32734BEFA0086F984 /* Unit2Graph1.jpeg in Resources */,
 				EAC3A00B27302C850038CB85 /* Tajawal-Bold.ttf in Resources */,
 				EAC3A00C27302C850038CB85 /* Tajawal-ExtraLight.ttf in Resources */,
 				EAC3A00D27302C850038CB85 /* Tajawal-Light.ttf in Resources */,
 				EA7DE4AE273010C500FB0C8B /* Main.storyboard in Resources */,
 				EAD9F19E273359070086F984 /* FirstUnitVideosTableViewCell.xib in Resources */,
 				EAF4777B2731857200D31ABE /* Intro.storyboard in Resources */,
+				EAD9F1C02734BE740086F984 /* SecondUnitGraph2.jpeg in Resources */,
 				EAD9F18F27334B9B0086F984 /* success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1067,6 +1141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7DE4AB273010C500FB0C8B /* HomeViewController.swift in Sources */,
+				EAD9F1C52734BFCF0086F984 /* FirstUnitImageViewController.swift in Sources */,
 				EAC3A01F27303C6F0038CB85 /* MoreViewController.swift in Sources */,
 				EAC3A01327302D020038CB85 /* TableViewExt.swift in Sources */,
 				EA7DE4A7273010C500FB0C8B /* AppDelegate.swift in Sources */,
@@ -1081,6 +1156,7 @@
 				EAC3A02127303D160038CB85 /* MoreViewModel.swift in Sources */,
 				EA7DE4E82730131F00FB0C8B /* Fonts.swift in Sources */,
 				EAC3A01827303BCB0038CB85 /* TabBarCordinator.swift in Sources */,
+				EAD9F1C82734C2440086F984 /* SecondUnitImageViewController.swift in Sources */,
 				EAD554012730952A00F5F26B /* CategoriesTableViewCollectionCell.swift in Sources */,
 				EAC3A01C27303C090038CB85 /* MoreRouter.swift in Sources */,
 				EAF477902731AFFA00D31ABE /* SecondUnitVideosViewController.swift in Sources */,

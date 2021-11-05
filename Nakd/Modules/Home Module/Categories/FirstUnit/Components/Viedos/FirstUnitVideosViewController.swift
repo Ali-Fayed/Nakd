@@ -23,7 +23,7 @@ class FirstUnitVideosViewController: UIViewController {
 //MARK: - TableView
 extension FirstUnitVideosViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        data.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue() as FirstUnitVideosTableViewCell

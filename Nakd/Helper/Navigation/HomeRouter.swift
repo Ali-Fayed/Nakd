@@ -15,10 +15,12 @@ enum HomeRoute: Route {
     case unit1
     case unit1Videos
     case unit1Graphs
+    case unit1ImageView(imageName: String)
     case unit1Quizes
     case unit2
     case unit2Videos
     case unit2Graphs
+    case unit2ImageView(imageName: String)
     case unit2Quizes
     case finalQuiz
 }
@@ -50,6 +52,7 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             return .push(viewController)
         case .unit1Graphs:
             let viewController = FirstUnitGraphsViewController.instaintiate(on: .firstUnit)
+            viewController.router = unownedRouter
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
@@ -71,6 +74,7 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             return .push(viewController)
         case .unit2Graphs:
             let viewController = SecondUnitGraphsViewController.instaintiate(on: .secondUnit)
+            viewController.router = unownedRouter
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
@@ -83,6 +87,14 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             let viewController = FinalQuizViewController.instaintiate(on: .mainView)
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
+            return .push(viewController)
+        case .unit1ImageView(let imageName):
+            let viewController = FirstUnitImageViewController.instaintiate(on: .firstUnit)
+            viewController.imageName = imageName
+            return .push(viewController)
+        case .unit2ImageView(let imageName):
+            let viewController = FirstUnitImageViewController.instaintiate(on: .secondUnit)
+            viewController.imageName = imageName
             return .push(viewController)
         }
     }
