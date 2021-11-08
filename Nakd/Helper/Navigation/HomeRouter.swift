@@ -19,7 +19,7 @@ enum HomeRoute: Route {
     case unit2
     case unit2Videos
     case unit2Graphs
-    case unit2ImageView(imageName: String)
+    case unit2ImageView
     case unit2Quizes
     case finalQuiz
 }
@@ -86,9 +86,8 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             let viewController = FirstUnitImageViewController.instaintiate(on: .firstUnit)
             viewController.imageName = imageName
             return .push(viewController)
-        case .unit2ImageView(let imageName):
-            let viewController = FirstUnitImageViewController.instaintiate(on: .secondUnit)
-            viewController.imageName = imageName
+        case .unit2ImageView:
+            let viewController = SecondUnitImageViewController.instaintiate(on: .secondUnit)
             return .push(viewController)
         }
     }

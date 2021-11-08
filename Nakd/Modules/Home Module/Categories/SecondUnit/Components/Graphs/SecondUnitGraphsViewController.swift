@@ -34,7 +34,7 @@ extension SecondUnitGraphsViewController: UITableViewDataSource, UITableViewDele
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        router?.trigger(.unit1ImageView(imageName: imageName[indexPath.row]))
+        router?.trigger(.unit2ImageView)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         75
