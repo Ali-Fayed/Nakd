@@ -14,8 +14,8 @@ import XCoordinator
 class FirstUnitGraphsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var router: UnownedRouter<HomeRoute>?
-    var data = ["FirstGraph".localized(), "SecondGraph".localized()]
-    var imageName = ["Unit1Graph1", "Unit1Graph2"]
+    var data = ["FirstGraph".localized()]
+    var imageName = ["Unit1Graph1"]
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "EducationGraphs".localized()
@@ -34,7 +34,7 @@ extension FirstUnitGraphsViewController: UITableViewDataSource, UITableViewDeleg
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        router?.trigger(.unit1ImageView(imageName: imageName[indexPath.row]))
+        router?.trigger(.unit1ImageView)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         75

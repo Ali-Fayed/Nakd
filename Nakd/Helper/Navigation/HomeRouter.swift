@@ -14,7 +14,7 @@ enum HomeRoute: Route {
     case unit1
     case unit1Videos
     case unit1Graphs
-    case unit1ImageView(imageName: String)
+    case unit1ImageView
     case unit1Quizes
     case unit2
     case unit2Videos
@@ -82,9 +82,8 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
             viewController.navigationController?.navigationBar.prefersLargeTitles = true
             viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
-        case .unit1ImageView(let imageName):
+        case .unit1ImageView:
             let viewController = FirstUnitImageViewController.instaintiate(on: .firstUnit)
-            viewController.imageName = imageName
             return .push(viewController)
         case .unit2ImageView:
             let viewController = SecondUnitImageViewController.instaintiate(on: .secondUnit)

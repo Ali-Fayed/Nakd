@@ -366,78 +366,37 @@
             </objects>
             <point key="canvasLocation" x="2640.579710144928" y="59.598214285714285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="bG9-mc-aFF">
+        <!--More Detail View Controller-->
+        <scene sceneID="1As-EG-TCn">
             <objects>
-                <viewController id="5HE-MT-rKN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ktf-6a-glM">
+                <viewController storyboardIdentifier="MoreDetailViewController" id="P1j-qp-k6i" customClass="MoreDetailViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDY-wI-erB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwp-Y1-831">
-                                <rect key="frame" x="20" y="395" width="374" height="171"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عرض اهداف الدرس :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etD-Hf-agW">
-                                        <rect key="frame" x="168" y="8" width="198" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTa-Fe-6SK">
-                                        <rect key="frame" x="27" y="38" width="339" height="125"/>
-                                        <string key="text">١ - ان تعدد الطالبه الخطوات الخمس للقرائه المتعمقه
-٢ - ان تفسر الطالبه الخطوات الخمس للقرائه المتعمقه
-٣- تطبق الخطوات القرائه المتعمقه علي احد الموضوعات
-٤ - تقارن بين القرائه التمهيديه السريعه و القرائه المتعمقه من حيث الاستعامالات و المميزات</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="navColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="iTa-Fe-6SK" secondAttribute="bottom" constant="8" id="10d-fc-C3d"/>
-                                    <constraint firstAttribute="trailing" secondItem="etD-Hf-agW" secondAttribute="trailing" constant="8" id="FPD-ll-0uT"/>
-                                    <constraint firstItem="etD-Hf-agW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uwp-Y1-831" secondAttribute="leading" id="Ugo-39-uuQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="iTa-Fe-6SK" secondAttribute="trailing" constant="8" id="ac0-tX-gwv"/>
-                                    <constraint firstItem="etD-Hf-agW" firstAttribute="top" secondItem="uwp-Y1-831" secondAttribute="top" constant="8" id="ueW-l4-vbT"/>
-                                    <constraint firstItem="iTa-Fe-6SK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uwp-Y1-831" secondAttribute="leading" id="v1t-pW-gRw"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53c-JF-KPz">
-                                <rect key="frame" x="59" y="259" width="288" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خطوات القرايه المتعمقه" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDd-PO-L3h">
-                                        <rect key="frame" x="29" y="50" width="230" height="28"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="navColor"/>
-                                <constraints>
-                                    <constraint firstItem="wDd-PO-L3h" firstAttribute="centerX" secondItem="53c-JF-KPz" secondAttribute="centerX" id="9cc-sh-rRF"/>
-                                    <constraint firstItem="wDd-PO-L3h" firstAttribute="centerY" secondItem="53c-JF-KPz" secondAttribute="centerY" id="OQh-E0-1MR"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dci-FY-bFh">
+                                <rect key="frame" x="20" y="71" width="358" height="614"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="p3e-BP-WzM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="xxb-Xt-j4h"/>
+                        <color key="backgroundColor" name="navColor"/>
                         <constraints>
-                            <constraint firstItem="uwp-Y1-831" firstAttribute="top" secondItem="Ktf-6a-glM" secondAttribute="top" constant="395" id="EoZ-M3-Q6o"/>
-                            <constraint firstItem="p3e-BP-WzM" firstAttribute="bottom" secondItem="uwp-Y1-831" secondAttribute="bottom" constant="296" id="OwJ-Td-JiO"/>
-                            <constraint firstItem="uwp-Y1-831" firstAttribute="top" secondItem="53c-JF-KPz" secondAttribute="bottom" constant="8" id="PKz-FR-KzZ"/>
-                            <constraint firstItem="uwp-Y1-831" firstAttribute="trailing" secondItem="Ktf-6a-glM" secondAttribute="trailingMargin" id="QUB-7a-8gI"/>
-                            <constraint firstItem="p3e-BP-WzM" firstAttribute="trailing" secondItem="53c-JF-KPz" secondAttribute="trailing" constant="67" id="ReZ-9j-QEk"/>
-                            <constraint firstItem="53c-JF-KPz" firstAttribute="leading" secondItem="p3e-BP-WzM" secondAttribute="leading" constant="59" id="cDK-SF-f0A"/>
-                            <constraint firstItem="53c-JF-KPz" firstAttribute="top" secondItem="p3e-BP-WzM" secondAttribute="top" constant="215" id="vFQ-Vb-bXM"/>
-                            <constraint firstItem="uwp-Y1-831" firstAttribute="leading" secondItem="Ktf-6a-glM" secondAttribute="leadingMargin" id="x7i-Z2-Mcs"/>
+                            <constraint firstItem="Dci-FY-bFh" firstAttribute="leading" secondItem="xxb-Xt-j4h" secondAttribute="leading" constant="20" id="L6t-Zk-qex"/>
+                            <constraint firstItem="Dci-FY-bFh" firstAttribute="top" secondItem="xxb-Xt-j4h" secondAttribute="top" constant="27" id="Z7B-7W-3C1"/>
+                            <constraint firstItem="xxb-Xt-j4h" firstAttribute="trailing" secondItem="Dci-FY-bFh" secondAttribute="trailing" constant="36" id="mil-bd-qfN"/>
+                            <constraint firstItem="xxb-Xt-j4h" firstAttribute="bottom" secondItem="Dci-FY-bFh" secondAttribute="bottom" constant="177" id="v45-lo-u2S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="Dci-FY-bFh" id="O2E-xb-mIp"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W1p-RV-mnZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYI-9I-H7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1094.2028985507247" y="70.982142857142847"/>
+            <point key="canvasLocation" x="-984.05797101449286" y="-13.392857142857142"/>
         </scene>
         <!--Final Quiz View Controller-->
         <scene sceneID="xBm-6C-wrB">
@@ -623,7 +582,7 @@
             <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navColor">
-            <color red="0.013000000268220901" green="0.85399997234344482" blue="0.77799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.39284360410000002" green="0.88341814279999997" blue="0.89823991059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

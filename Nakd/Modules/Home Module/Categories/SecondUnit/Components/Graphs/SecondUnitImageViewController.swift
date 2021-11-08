@@ -10,7 +10,6 @@ import UIKit
 class SecondUnitImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        var data = ["FirstGraph".localized()]
-
+        title = "FirstGraph".localized()
     }
 }

@@ -8,27 +8,8 @@
 import UIKit
 
 class FirstUnitImageViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView!
-    var imageName: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        var data = ["FirstGraph".localized()]
-        guard let imageName = imageName else {
-            return
-        }
-        imageView.image = UIImage(named: imageName)
+        title = "FirstGraph".localized()
     }
-    
-}
-class FirstUnit1ImageViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView!
-    var imageName: String?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        guard let imageName = imageName else {
-            return
-        }
-        imageView.image = UIImage(named: imageName)
-    }
-    
 }
