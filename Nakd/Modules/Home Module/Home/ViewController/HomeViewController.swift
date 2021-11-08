@@ -169,9 +169,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 //MARK: - Navigation
 extension HomeViewController: HomeViewCellDelegate {
     func didTapButton(cell: CategoriesCollectionViewCell) {
-        if cell.lblCategoryName.text ==  "Intro".localized() {
-            viewModel.router?.trigger(.intro)
-        } else if cell.lblCategoryName.text ==  "Unit1".localized() {
+        if cell.lblCategoryName.text ==  "Unit1".localized() {
             viewModel.router?.trigger(.unit1)
         } else if cell.lblCategoryName.text ==  "Unit2".localized() {
             viewModel.router?.trigger(.unit2)

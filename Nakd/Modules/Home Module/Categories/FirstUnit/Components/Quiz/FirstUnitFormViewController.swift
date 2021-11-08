@@ -83,6 +83,7 @@ class FirstUnitFormViewController: UIViewController {
             alert.addAction(restartAction)
             alert.addAction(backAction)
             present(alert, animated: true, completion: nil)
+            startAnimation(animation: FirstUnitFormViewController.successAnimation)
         }
     }
     func updateUI(){
@@ -103,6 +104,8 @@ class FirstUnitFormViewController: UIViewController {
         score = 0
         questionNumber = 0
         updateQuestion()
+        animationView.isHidden = true
+        animationView.stop()
         optionC.isHidden = false
         optionD.isHidden = false
     }

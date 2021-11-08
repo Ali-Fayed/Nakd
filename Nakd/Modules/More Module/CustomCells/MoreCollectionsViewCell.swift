@@ -9,8 +9,8 @@ import UIKit
 import Kingfisher
 
 class MoreCollectionsViewCell: UICollectionViewCell {
-    var model = ["Goals".localized(), "WhyUs?".localized(), "WhoUs?".localized(), "Contact".localized()]
-    var images = ["goals", "whyUs?", "people", "why"]
+    var model = ["Goals".localized(), "WhyUs?".localized(), "WhoUs?".localized(), "Contact".localized(), "MoreVideos".localized()]
+    var images = ["goals", "whyUs?", "people", "why", "videos"]
     weak var delegate: MoreDelegate?
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var continueButton: UIButton!

@@ -27,7 +27,7 @@ class CategoriesTableViewCollectionCell: UITableViewCell {
 //MARK: - CollectionView
 extension CategoriesTableViewCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource {
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 3
      }
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCollectionViewCell", for: indexPath) as? CategoriesCollectionViewCell
@@ -35,15 +35,6 @@ extension CategoriesTableViewCollectionCell: UICollectionViewDelegate, UICollect
          cell?.delegate = self
          return cell!
      }
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            print("intro")
-        } else if indexPath.row == 1 {
-            print("unit1")
-        } else if indexPath.row == 2 {
-            print("unit2")
-        }
-    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: CGFloat(100), height: CGFloat(100))
     }
@@ -52,5 +43,4 @@ extension CategoriesTableViewCollectionCell : DetailViewCellDelegate {
     func didTapButton(cell: CategoriesCollectionViewCell, didTappedThe button: UIButton?) {
         delegate?.didTapButton(cell: cell)
     }
-    
 }

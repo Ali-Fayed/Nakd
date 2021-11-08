@@ -112,6 +112,40 @@
             </objects>
             <point key="canvasLocation" x="663.768115942029" y="59.598214285714285"/>
         </scene>
+        <!--More Videos View Controller-->
+        <scene sceneID="BVj-DE-O6t">
+            <objects>
+                <viewController storyboardIdentifier="MoreVideosViewController" id="Cev-Gw-p0j" customClass="MoreVideosViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pou-j0-0zZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yU5-UK-VJY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Cev-Gw-p0j" id="kNJ-tC-1jJ"/>
+                                    <outlet property="delegate" destination="Cev-Gw-p0j" id="AMC-Uq-hbK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uSa-mu-Ktl"/>
+                        <color key="backgroundColor" name="navColor"/>
+                        <constraints>
+                            <constraint firstItem="uSa-mu-Ktl" firstAttribute="bottom" secondItem="yU5-UK-VJY" secondAttribute="bottom" id="EMm-0N-gJ8"/>
+                            <constraint firstItem="yU5-UK-VJY" firstAttribute="leading" secondItem="uSa-mu-Ktl" secondAttribute="leading" id="Kqc-w5-FR4"/>
+                            <constraint firstItem="yU5-UK-VJY" firstAttribute="top" secondItem="uSa-mu-Ktl" secondAttribute="top" id="Roq-4T-jph"/>
+                            <constraint firstItem="uSa-mu-Ktl" firstAttribute="trailing" secondItem="yU5-UK-VJY" secondAttribute="trailing" id="lEK-ju-GLU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="yU5-UK-VJY" id="uSJ-hv-ON4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHJ-Aw-Au0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="344"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="AG3-Py-MoM">
             <objects>
@@ -509,38 +543,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx0-XO-OUg" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-107" y="38"/>
-        </scene>
-        <!--More Detail View Controller-->
-        <scene sceneID="BOj-qG-Tge">
-            <objects>
-                <viewController storyboardIdentifier="MoreDetailViewController" id="wky-0l-4uP" customClass="MoreDetailViewController" customModule="Nakd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qwX-8H-vvl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نحن تطبيق ناقد تطبيق تعليمي خدمي يهدف الي تعليم اللغه العربيه" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug3-Na-lbK">
-                                <rect key="frame" x="0.0" y="244" width="414" height="379"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="nTM-c7-hmO"/>
-                        <color key="backgroundColor" name="navColor"/>
-                        <constraints>
-                            <constraint firstItem="Ug3-Na-lbK" firstAttribute="top" secondItem="nTM-c7-hmO" secondAttribute="top" constant="200" id="8w2-qI-mgy"/>
-                            <constraint firstItem="nTM-c7-hmO" firstAttribute="bottom" secondItem="Ug3-Na-lbK" secondAttribute="bottom" constant="239" id="Heo-dJ-Jw6"/>
-                            <constraint firstItem="Ug3-Na-lbK" firstAttribute="trailing" secondItem="nTM-c7-hmO" secondAttribute="trailing" id="J2o-Qi-qNg"/>
-                            <constraint firstItem="Ug3-Na-lbK" firstAttribute="leading" secondItem="nTM-c7-hmO" secondAttribute="leading" id="nj1-8z-5Qr"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="detailLabel" destination="Ug3-Na-lbK" id="9it-au-gUx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RjQ-Ee-fdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-777" y="21"/>
         </scene>
     </scenes>
     <resources>

@@ -9,51 +9,50 @@ import UIKit
 import XCoordinator
 
 class MoreViewController: UIViewController {
-    var viewModel = MoreViewModel()
     @IBOutlet weak var collectionView: UICollectionView!
+    static let moreTableCell = "MoreCollectionsViewCell"
+    var router: StrongRouter<MoreRoute>?
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UIconfig ()
+    }
     func UIconfig () {
         title = "More".localized()
         tabBarController?.tabBar.barTintColor = UIColor.white
         tabBarController?.tabBar.backgroundColor = UIColor.white
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        UIconfig ()
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
-        collectionView.register( UINib(nibName: "MoreCollectionsViewCell", bundle: nil), forCellWithReuseIdentifier: "MoreCollectionsViewCell")
+        collectionView.register( UINib(nibName: MoreViewController.moreTableCell, bundle: nil), forCellWithReuseIdentifier: MoreViewController.moreTableCell)
     }
 }
 //MARK: - CollectionView
-extension MoreViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MoreViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 5
      }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoreCollectionsViewCell", for: indexPath) as! MoreCollectionsViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MoreViewController.moreTableCell, for: indexPath) as! MoreCollectionsViewCell
         cell.setData(indexPath: indexPath)
         cell.delegate = self
         return cell
     }
- }
-extension MoreViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 200, height: 300)
     }
-}
+ }
+//MARK: - MoreDelegate
 extension MoreViewController: MoreDelegate {
     func didTapButton(cell: MoreCollectionsViewCell, didTappedThe button: UIButton?) {
-        guard let indexPath = collectionView.indexPath(for: cell) else {
-            return
-        }
+        guard let indexPath = collectionView.indexPath(for: cell) else {return}
         if indexPath.row == 0 {
-            viewModel.router?.trigger(.moreDetails(text: "GoalsDescr".localized()))
+            router?.trigger(.moreDetails(text: "GoalsDescr".localized()))
         } else if indexPath.row == 1 {
-            viewModel.router?.trigger(.moreDetails(text: "WhyUsDescr".localized()))
+            router?.trigger(.moreDetails(text: "WhyUsDescr".localized()))
         } else if indexPath.row == 2 {
-            viewModel.router?.trigger(.moreDetails(text: "WhoUsDescr".localized()))
+            router?.trigger(.moreDetails(text: "WhoUsDescr".localized()))
         } else if indexPath.row == 3 {
-            viewModel.router?.trigger(.moreDetails(text: "ContactUsDescr".localized()))
+            router?.trigger(.moreDetails(text: "ContactUsDescr".localized()))
+        }  else if indexPath.row == 4 {
+            router?.trigger(.moreVideos)
         }
     }
-    
 }

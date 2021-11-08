@@ -11,7 +11,6 @@ import SafariServices
 // make route has tab controller or navigation controller or a new root view controller
 enum HomeRoute: Route {
     case home
-    case intro
     case unit1
     case unit1Videos
     case unit1Graphs
@@ -33,11 +32,6 @@ class HomeCoordinator: NavigationCoordinator<HomeRoute> {
         case .home:
             let viewController = HomeViewController.instaintiate(on: .mainView)
             viewController.viewModel.router = unownedRouter
-            return .push(viewController)
-        case .intro:
-            let viewController = IntroViewController.instaintiate(on: .intro)
-            viewController.navigationController?.navigationBar.prefersLargeTitles = true
-            viewController.navigationItem.largeTitleDisplayMode = .always
             return .push(viewController)
         case .unit1:
             let viewController = FirstUnitViewController.instaintiate(on: .firstUnit)

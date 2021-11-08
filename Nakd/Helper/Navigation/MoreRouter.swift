@@ -12,6 +12,7 @@ import SafariServices
 enum MoreRoute: Route {
     case more
     case moreDetails(text: String)
+    case moreVideos
 }
 class MoreCoordinator: NavigationCoordinator<MoreRoute> {
     init() {
@@ -21,11 +22,14 @@ class MoreCoordinator: NavigationCoordinator<MoreRoute> {
         switch route {
         case .more:
             let viewController = MoreViewController.instaintiate(on: .mainView)
-            viewController.viewModel.router = strongRouter
+            viewController.router = strongRouter
             return .push(viewController)
         case .moreDetails(let text):
             let viewController = MoreDetailViewController.instaintiate(on: .mainView)
             viewController.detailText = text
+            return .push(viewController)
+        case .moreVideos:
+            let viewController = MoreVideosViewController.instaintiate(on: .mainView)
             return .push(viewController)
         }
     }

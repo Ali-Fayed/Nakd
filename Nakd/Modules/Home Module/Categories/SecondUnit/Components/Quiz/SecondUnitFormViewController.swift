@@ -50,7 +50,7 @@ class SecondUnitFormViewController: UIViewController {
                 alert.addAction(restartAction)
                 alert.addAction(resumeAction)
                 present(alert, animated: true, completion: nil)
-                startAnimation(animation: FirstUnitFormViewController.failAnimation)
+                startAnimation(animation: SecondUnitFormViewController.failAnimation)
             }
         }
         questionNumber += 1
@@ -101,6 +101,8 @@ class SecondUnitFormViewController: UIViewController {
         score = 0
         questionNumber = 0
         updateQuestion()
+        animationView.isHidden = true
+        animationView.stop()
         optionC.isHidden = false
         optionD.isHidden = false
     }

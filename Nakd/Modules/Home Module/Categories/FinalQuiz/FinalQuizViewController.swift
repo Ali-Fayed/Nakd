@@ -84,7 +84,7 @@ class FinalQuizViewController: UIViewController {
             alert.addAction(restartAction)
             alert.addAction(backAction)
             present(alert, animated: true, completion: nil)
-            startAnimation(animation: FirstUnitFormViewController.successAnimation)
+            startAnimation(animation: FinalQuizViewController.successAnimation)
         }
     }
     func updateUI(){
@@ -101,6 +101,8 @@ class FinalQuizViewController: UIViewController {
         score = 0
         questionNumber = 0
         updateQuestion()
+        animationView.isHidden = true
+        animationView.stop()
         optionC.isHidden = false
         optionD.isHidden = false
     }
