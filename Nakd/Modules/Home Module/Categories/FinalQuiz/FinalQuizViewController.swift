@@ -52,6 +52,7 @@ class FinalQuizViewController: UIViewController {
                 alert.addAction(resumeAction)
                 present(alert, animated: true, completion: nil)
                 startAnimation(animation: FinalQuizViewController.failAnimation)
+                HapticsManger.shared.selectionVibrate(for: .heavy)
             }
         }
         questionNumber += 1

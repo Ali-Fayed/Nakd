@@ -24,6 +24,7 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     }
     @IBAction func pressStartButton(_ sender: UIButton) {
         delegate?.didTapButton(cell: self, didTappedThe: sender as? UIButton)
+        HapticsManger.shared.selectionVibrate(for: .medium)
     }
     func setData(indexPath: IndexPath) {
         lblCategoryName.text = model[indexPath.row]

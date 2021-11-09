@@ -51,6 +51,7 @@ class SecondUnitFormViewController: UIViewController {
                 alert.addAction(resumeAction)
                 present(alert, animated: true, completion: nil)
                 startAnimation(animation: SecondUnitFormViewController.failAnimation)
+                HapticsManger.shared.selectionVibrate(for: .heavy)
             }
         }
         questionNumber += 1

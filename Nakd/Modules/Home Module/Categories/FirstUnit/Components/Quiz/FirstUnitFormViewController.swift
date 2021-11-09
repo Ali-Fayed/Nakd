@@ -50,6 +50,7 @@ class FirstUnitFormViewController: UIViewController {
                 alert.addAction(resumeAction)
                 present(alert, animated: true, completion: nil)
                 startAnimation(animation: FirstUnitFormViewController.failAnimation)
+                HapticsManger.shared.selectionVibrate(for: .heavy)
             }
         }
         questionNumber += 1
